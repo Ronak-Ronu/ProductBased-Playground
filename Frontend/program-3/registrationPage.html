@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Page</title>
+</head>
+<body>
+
+        <form onsubmit="alert('Hello '+ username.value)">
+            <h1>Registration Page</h1>
+            <br><br>
+            <label for="Username">*Username</label>
+            <input name="username" required type="text"><br><br>
+            <label for="Email">Email</label>
+            <input type="email"><br><br>
+            <label  for="Password">*Password</label>
+            <input required name="pass" type="password"><br><br>
+            <label for="Confirm Password">*Confirm Password</label>
+            <input required type="password"><br><br>
+            <label for="DOB">Date of Birth</label>
+            <input type="date"><br>
+            <br>
+            <label for="Country">Country</label>
+            
+            <select>
+                <option value="India" >India</option>
+                <option value="America">America</option>
+                <option value="Australia">Australia</option>
+                <option value="Europe">Europe</option>
+                <option value="Europe">Africa</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Bangladesh">Bangladesh</option>
+                
+            </select><br><br>
+            <label for="gender">Gender</label>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+            
+            <br><br>
+            <input type="submit">
+        </form>
+        <br><br>
+        
+        <a href="./loginPage.html">Already Registered ?</a>
+        
+    </body>
+    </html>
