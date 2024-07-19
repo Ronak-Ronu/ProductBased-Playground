@@ -1,0 +1,14 @@
+*{
+    margin: 20;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+ul,ol{
+    color: black;
+}
+table, th, td{
+    color: black;
+}
+
+  
