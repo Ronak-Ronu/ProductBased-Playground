@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+         h1{
+            color: cornflowerblue;
+            border: 2px dotted blue;
+            width: 300px;
+            text-align: center;
+            background-color: gainsboro ;
+            cursor: grab;
+        }
+        h1:hover{
+            color: rgb(173, 173, 252);
+        }
+         table{
+            width: 50%;
+            height: 30%;
+            border: 2px solid blueviolet;
+            
+        }
+        th{
+            color: blue;
+            background-color: rgb(212, 212, 248);
+        }
+        td{
+            text-align: center;
+        }
+        .col1{
+            background-color: aliceblue;
+        }
+        .col2{
+            background-color: rgb(255, 242, 227);
+        }
+        .col3
+        {
+            background-color: rgb(255, 231, 235);
+        }
+        .col4
+        {
+            background-color: rgb(253, 253, 236);
+        }
+     
+     #idselector
+     {
+        width: 200px;
+        background-color: rgb(244, 244, 244);
+        border: 1px solid grey;
+        margin-bottom: 20px;
+     }
+     #idselector li:hover{
+            background-color: rgb(195, 194, 194);
+     }
+    </style>
+</head>
+<body>
+    <h1>CSS SELECTORS</h1>
+    <div id="idselector">
+        <ul>
+            <li>universal selector</li>
+            <li>tag name selector</li>
+            <li>class selector</li>
+            <li>id name selector</li>
+        </ul>
+    </div>
+    <table>
+        <tr >
+            <th>sno</th>
+            <th>emp id</th>
+            <th>emp name</th>
+            <th>emp salary</th>
+        </tr>
+        <tr>
+            <td class="col1">1</td>
+            <td class="col2">1221</td>
+            <td class="col3">dwight</td>
+            <td class="col4">1000201</td>
+        </tr>
+        <tr>
+            <td class="col1">2</td>
+            <td class="col2">5783</td>
+            <td class="col3">mighale</td>
+            <td class="col4">1000201</td>
+        </tr>
+        <tr>
+            <td class="col1">3</td>
+            <td class="col2">2566</td>
+            <td class="col3">jim</td>
+            <td class="col4">14124</td>
+        </tr>
+        <tr>
+            <td class="col1">4</td>
+            <td class="col2">3133</td>
+            <td class="col3">pam</td>
+            <td class="col4">1561346</td>
+        </tr>
+        <tr>
+            <td class="col1">5</td>
+            <td class="col2">1346</td>
+            <td class="col3">shrute</td>
+            <td class="col4">1235134</td>
+        </tr>
+    </table>
+</body>
+</html>
