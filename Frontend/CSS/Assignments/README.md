@@ -6,7 +6,7 @@
 
 ### output
 
-![alt text](image-1.png)
+![alt text](image-5.png)
 
 ### Q2. Design and Apply style using CSS as in the image below. (Note : Use Div / Table Tag)
  - METHOD 1 <- Using Div Tag
