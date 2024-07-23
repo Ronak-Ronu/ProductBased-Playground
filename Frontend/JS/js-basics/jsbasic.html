@@ -93,6 +93,30 @@
                 document.getElementById("result").innerHTML="<font color='green'>"+result+"</font>"
             }
         </script>
+        
+        <script>
+            let isprime = (n,i)=>{
+                if(n<=2)
+            {
+                return (n===2)?true:false;
+            }
+            if(n%i===0)
+            {
+                return false;
+            }
+            if(i*i>n)
+            {
+                return true;
+            }
+            return isprime(n,i+1);
+            }
+            function prime()
+            {
+                let pnum=document.getElementById("num2").value*1;
+                let output=isprime(pnum,2);
+                document.getElementById("output").innerHTML="<font color='green'>"+output+"</font>"
+            }
+        </script>
 </head>
 <body>
     <button onclick="numberconvention()">Generate</button>
@@ -117,14 +141,28 @@
 <b>Change background Color</b><br><br>
 <label for="pickcolor">Pick color</label>
 <input type="color" id="pickcolor"><br><br>
+
+
 <button onclick="changecolorbyname()">Type the color</button>
 <button onclick="changebgcolor()">Change backgroudn color</button>
 <button onclick="changetextcolor()">Change text color</button>
+
 <br><br><hr><br><br>
+
 <b><h3>Factorial Program</h3></b>
 <input type="number" id="num1"><br>
 <h3 id="result"></h3>
 <button onclick="factorial()">Calculate Factorial</button>
 <br><br><br><br>
+
+<hr>
+<b><h3>Prime Number</h3></b>
+<input type="number" id="num2">
+<h3 id="output"></h3>
+<button onclick="prime()">Is Prime</button>
+
+<br><br><br><br>
+
+
 </body>
 </html>

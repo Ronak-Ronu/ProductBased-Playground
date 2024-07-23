@@ -59,3 +59,33 @@ function factorial(){
         document.getElementById("result").innerHTML="<font color='green'>"+result+"</font>"
     }
 ```
+
+### Program -7
+![alt text](image-8.png)
+
+```js
+<script>
+    let isprime = (n,i)=>{
+        if(n<=2)
+            {
+                return (n===2)?true:false;
+            }
+        if(n%i===0)
+            {
+                return false;
+            }
+        if(i*i>n)
+            {
+                return true;
+            }
+        return isprime(n,i+1);
+    }
+    
+function prime()
+    {
+        let pnum=document.("num2").value*1;
+        let output=isprime(pnum,2);
+        document.getElementById("output").innerHTML="<font color='green'+output+"</font>"
+    }
+</script>
+```
