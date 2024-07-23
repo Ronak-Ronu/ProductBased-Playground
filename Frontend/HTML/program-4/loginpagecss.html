@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+            *{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+            table{
+                width: 300px;
+                padding: 20px;
+                border-radius: 5px;
+                background-color: rgb(227, 208, 255);
+            }
+            .Username, .password{
+                border: none;
+                border-bottom: 2px solid black;
+                background-color: transparent;
+            }
+            .registertext{
+                text-decoration: none;
+                color: blueviolet;
+            }
+            .submitbutton{
+                border: 1px solid purple;
+                background-color: rgb(220, 183, 255);
+            }
+            .submitbutton:hover{
+                background-color: rgb(205, 160, 247);
+                cursor: pointer;
+
+            }
+            .logincontainer{
+                padding: 10px;
+                margin-top: 200px;
+                margin-left: 50px;
+                transform: translate(-50px,-50px);
+            }
+            .Username:focus , .password:focus
+            {
+                outline: none;
+
+            }
+    </style>
+</head>
+<body>
+    <div class="logincontainer">
+
+        <table align="center">
+            <tr><th colspan="2"><h1 class="heading">Login Page</h1></th></tr>
+            <tr><td>Username</td><td><input class="Username" type="text"></td></tr>
+            <tr><td><br></td></tr>
+            <tr><td>Password</td><td><input type="password" class="password"></td></tr>
+            <tr><td><br></td></tr>
+            <tr><td colspan=2" align="center"><input class="submitbutton" type="submit"></td></tr>
+            <tr><td><a class="registertext" href="./registrationPage.html">Register ?</a></td></tr>
+        </table>
+    </div>
+
+</body>
+</html>

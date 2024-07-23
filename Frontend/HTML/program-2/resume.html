@@ -1,150 +1,284 @@
-<html >
+<html>
 <head>
-    <title>program 2</title>
-    <!-- <style>
-        .user{
-            display: flex;
-            justify-content: space-around;
-            color: purple;
+    <title>Ronak's Resume</title>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.contact-info {
+    padding: 10px;
+}
+.contact-info pre {
+    font-size: 16px;
+    font-family: monospace;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.about {
+        padding-left: 3%;
+}
+.about details {
+    margin-bottom: 20px;
+}
+.about details summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+.education {
+    padding: 20px;
+}
+.education h2 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.education ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.education li {
+    margin-bottom: 20px;
+}
+.education h3 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+.projects {
+    padding: 20px;
+}
+.projects h2 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.projects ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.projects li {
+    margin-bottom: 20px;
+}
+.projects h3 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+.skillsummary {
+    padding: 20px;
+}
+.skillsummary h2 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.skillsummary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.skillsummary li {
+    margin-bottom: 10px;
+}
+.languages {
+    padding: 20px;
+}
+.languages h2 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.languages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.languages li {
+    margin-bottom: 10px;
+}
+.achievement {
+    padding: 20px;
+}
+.achievement h2 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.achievement ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.achievement li {
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+    border-radius: 0 0 10px 10px;
+}
+address {
+    font-style: normal;
+}
 
-        }
-        a{
-            color: purple;
-            text-decoration: none;
-        }
-        .education, .skillsummary, .Projects, .languages, .Achievement{
-            margin-left: 20;
-        }
-   
-    </style> -->
+</style>
 </head>
-<body>
-    <center>
-        <h1>RONAK</h1>
-    </center>
-    <hr>
-    <pre>
-        <font size="4"> 
-     <span>Email:</span><a href="mailto: ronakronu02gmail.com">ronakronu02@gmail.com</a>
-     <span>Links</span>:<a href="https://www.linkedin.com/in/ronaksutharb/">LinkedIn</a> | <a href="https://github.com/Ronak-Ronu/">Github</a>
-
-     <span>Phone no.</span>+91 8472511008</font>
-    </pre>
-    <hr>
-    <details>
-        <summary>In Short</summary>
-        <p>I am Learner.</p>
-      </details>
-      <hr>
-    <div class="education">
-        <h2>Education</h1>
-        <div class="ed-section">
-
-                <ul type="circle">
-                    <li>K.S.Rangasamy college of Technology <br>Bachelore of Technology in Computer SCience and Business Systems <br><b>CGPA: 8.24</b>
-   <meter value="0.82"></meter>
-    </B></li>
-                </ul>
-        </div>
-        <div class="ed-section">
-
-            <ul type="circle">
-                <li>Erode Hindu kalvi nilayam <br>Computer SCience<br>XII Percentage: <b>82%</b>   <meter value="0.82"></meter>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-    <hr>
-    <div class="projects">
-        <h2>Experience</h2>
-        <div class="project-section">
-            
-            <ul type="circle">
-                <li><b><a href="https://csbs20.onrender.com/">CSBS 2.0</a></b>&nbsp;&nbsp;<a href="https://github.com/Ronak-Ronu/csbs2.0"><b>github</b></a>&nbsp;(Full stack web development web application in Flask,MySQL)</li>
-                <ul>
-                    <li>Python REPL (Read-Eval-Print-Loop) is included for user experice python fundamentals.</li>
-                    <li>Ubuntu OS gui SIMULATION FOR ux</li>
-                    <li>Mail-Book store for users to gain knowledge from e-books.</li>
-                    <li>followed OOP and application development cycle.</li>
-                </ul>
-            </ul>
-            <ul type="circle">
-                <li><b><a href="https://ronaktodoapp.web.app/">TODO APPLICATION</a></b>&nbsp;&nbsp;<a href="https://github.com/Ronak-Ronu/TodoApp"><b>github</b></a>&nbsp;(OAuth integrated,backend-firebase,frontend-ReactJS)</li>
-                <ul>
-                    <li>Integrated OAuth Google API for user authorization and users todos.</li>
-                    <li>firebase for deployment of web application </li>
-                    <li>Front-end used is react js framework and backend as nosql database-cloud firestore</li>
-                </ul>
-            </ul>
-            <ul type="circle">
-                <li><b><a href="https://imronak-2002.web.app/#/">ImRonak APPLICATION</a></b>&nbsp;&nbsp;<a href="https://github.com/Ronak-Ronu/imronak-2002"><b>github</b></a>&nbsp;(Flutter Frontend project)</li>
-                <ul>
-                    <li>integrated flutter audio packeages for music generation for UX.</li>
-                    <li> added minute animations and social links to reach me</li>
-                    <li>The carousel package is used to showcase achievements and certificates </li>
-                </ul>
-            </ul>
-            <ul type="circle">
-                <li><b><a href="https://ronak-ronu.github.io/Terminal_Demo/">Ent. Terminal</a></b>&nbsp;&nbsp;<a href="https://github.com/Ronak-Ronu/Terminal_Demo"><b>github</b></a>&nbsp;(Jquery ,AI image generation API)</li>
-                <ul>
-                    <li>A uncomplicated project demonstrated for the terminal that highlights the engaging <br> commands and features that may be found there..</li>
-                    <li>Integrated Pollination image generation API based on user input prompts</li>
-                    <li>interactive UI/UX for much entertainment to users</li>
-                </ul>
-            </ul>
-        </div>
-    </div>
-    <hr>
-   <div class="skillsummary">
-    <h2>Skills Summary</h2>
-    <p><b>Programming languages: </b> Python, Java, C, C++</p>
-    <p><b>Libraries/Frameworks: </b> ReactJS, Flask, Nodejs, Express, Bootstrap</p>
-    <p><b>Tools/Platforms: </b> Github, Git, Firebase, VS Code, Ubuntu linux, Jenkins, Ansible, docker</p>
-    <p><b>Database: </b> MYSQL, MongoDB,cloud firestore</p>
-   </div> 
-
-<hr>
-   <div class="languages">
-    <h2>Languages</h2>
-    <p>Hindi, English, Tamil</p>
-   </div>
-<hr>
-   <div class="Achievement">
-        <h2>Achievement</h2>
-        <ul type="circle">
-            <li>Secured <b>81%</b> in DSA using Java - NPTEL</li>
-            <li>Jenkins pipeline certification - coursera</li>
-            <li>Completed this webpage resume using html .</li>
-        </ul>
-   </div>
-   
-   <address>
-    Resume by <a href="mailto:ronakronu02@gmail.com">Ronak</a>.<br>
+<body style="cursor: all-scroll">
     
-  </address>
-  
-</html>
-</body>
-</html>
-
-
-
-
-<!-- 
-
-
-<form oninput="result.value=parseInt(a.value) + parseInt(b.value)">
-    <input type="range" id="a" value="50">
-    + <input type="number" id="b" value="50">
-    = <output name="result" for="a b">100</output>
-  </form>
-
-
- -->
-
-
- <!-- <div class="email"><a href="mailto: ronakronu02gmail.com">ronakronu02@gmail.com</a></div>
-        <div class="linkedin"><a href="https://www.linkedin.com/in/ronaksutharb/">linkedin.com/Ronaksutharb</a></div>
-        <div class="github"><a href="https://github.com/Ronak-Ronu/">github.com/Ronak-Ronu</a></div>
-        <div class="phone">+91 1122214131</div> -->
+    <div class="container">
+        <div style="display: flex;justify-content: end;">
+            <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+            <script type="IN/Share" data-url="https://ronak-ronu.github.io/Terminal_Demo/"></script>
+        </div>
+        <header  >
+            <h1>Ronak</h1>
+        </header>
+            
+        <section class="contact-info">
+            <pre>
+                <span>Email:</span><a href="mailto:ronakronu02@gmail.com">ronakronu02@gmail.com</a>
+                <span>Links:</span><a href="https://www.linkedin.com/in/ronaksutharb/">LinkedIn</a> | <a href="https://github.com/Ronak-Ronu/">Github</a>
+                <span>Phone no.:</span>+91 8472511008
+            </pre>
+        </section>
+        <section class="about">
+            <details>
+                <summary>In Short</summary>
+                <p>I am a Learner.</p>
+            </details>
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            <div class="ed-section">
+                <ul>
+                    <li>
+                        <h3>K.S.Rangasamy college of Technology</h3>
+                        <p>Bachelor of Technology in Computer Science and Business Systems</p>
+                        <p><b>CGPA: 8.24</b></p>
+                        <meter value="0.82"></meter>
+                    </li>
+                </ul>
+            </div>
+            <div class="ed-section">
+                <ul>
+                    <li>
+                        <h3>Erode Hindu kalvi nilayam</h3>
+                        <p>Computer Science</p>
+                        <p>XII Percentage: <b>82%</b></p>
+                        <meter value="0.82"></meter>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects">
+            <h2>Experience</h2>
+            <div class="project-section">
+                <ul>
+                    <li>
+                        <h3><a href="https://csbs20.onrender.com/">CSBS 2.0</a></h3>
+                        <p><a href="https://github.com/Ronak-Ronu/csbs2.0">github</a></p>
+                        <p>(Full stack web development web application in Flask, MySQL)</p>
+                        <ul>
+                            <li>Python REPL (Read-Eval-Print-Loop) is included for user experience python fundamentals.</li>
+                            <li>Ubuntu OS gui SIMULATION for ux</li>
+                            <li>Mail-Book store for users to gain knowledge from e-books.</li>
+                            <li>followed OOP and application development cycle.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><a href="https://ronaktodoapp.web.app/">TODO APPLICATION</a></h3>
+                        <p><a href="https://github.com/Ronak-Ronu/TodoApp">github</a></p>
+                        <p>(OAuth integrated, backend-firebase, frontend-ReactJS)</p>
+                        <ul>
+                            <li>Integrated OAuth Google API for user authorization and users todos.</li>
+                            <li>firebase for deployment of web application</li>
+                            <li>Front-end used is react js framework and backend as nosql database-cloud firestore</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><a href="https://imronak-2002.web.app/#/">ImRonak APPLICATION</a></h3>
+                        <p><a href="https://github.com/Ronak-Ronu/imronak-2002">github</a></p>
+                        <p>(Flutter Frontend project)</p>
+                        <ul>
+                            <li>integrated flutter audio packages for music generation for UX.</li>
+                            <li>added minute animations and social links to reach me</li>
+                            <li>The carousel package is used to showcase achievements and certificates</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><a href="https://ronak-ronu.github.io/Terminal_Demo/">Ent. Terminal</a></h3>
+                        <p><a href="https://github.com/Ronak-Ronu/Terminal_Demo">github</a></p>
+                        <p>(Jquery, AI image generation API)</p>
+                        <ul>
+                            <li>A uncomplicated project demonstrated for the terminal that highlights the engaging commands and features that may be found there..</li>
+                            <li>Integrated Pollination image generation API based on user input prompts</li>
+                            <li>
+                                <li>interactive UI/UX for much entertainment to users</li>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="skillsummary">
+                    <h2>Skills Summary</h2>
+                    <p><b>Programming languages: </b> Python, Java, C, C++</p>
+                    <p><b>Libraries/Frameworks: </b> ReactJS, Flask, Nodejs, Express, Bootstrap</p>
+                    <p><b>Tools/Platforms: </b> Github, Git, Firebase, VS Code, Ubuntu linux, Jenkins, Ansible, docker</p>
+                    <p><b>Database: </b> MYSQL, MongoDB, cloud firestore</p>
+                </section>
+                <section class="languages">
+                    <h2>Languages</h2>
+                    <p>Hindi, English, Tamil</p>
+                </section>
+                <section class="achievement">
+                    <h2>Achievement</h2>
+                    <ul>
+                        <li>Secured <b>81%</b> in DSA using Java - NPTEL</li>
+                        <li>Jenkins pipeline certification - coursera</li>
+                        <li>Completed this webpage resume using html.</li>
+                    </ul>
+                </section>
+                <footer>
+                    <address>
+                        Resume by <a href="mailto:ronakronu02@gmail.com">Ronak</a>.<br>
+                    </address>
+                </footer>
+            </div>
+        </body>
+      
+        </html>
