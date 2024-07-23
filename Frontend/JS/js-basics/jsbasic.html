@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>JAVASCRIPT</title>
+    
+    <script>
+        document.write("<font color='red'><h2>JavaScript</h2></font><font color='green'><h2>Fundamentals</h2></font><font color'blue'><h2>PlayGround</h2></font>")
+        document.write("<p>program-1 = <b>Variable Declaration</b>  </p>")    
+        var a=10;   
+        var b="ten";
+        var c="X";
+        document.write("<br/>Integer : "+a);
+        document.write("<br/>Naming convention : "+b);
+        document.write("<br/>Roman convention : "+c);
+        document.write("<hr/>")
+    </script>
+
+        <script>
+        document.write("<p>program-2 = <b>functions</b></p>"); 
+        function numberconvention()
+                {
+
+                var a=10;   
+                var b="ten";
+                var c="X";
+                document.write("<br/>Integer : "+a);
+                document.write("<br/>Naming convention : "+b);
+                document.write("<br/>Roman convention : "+c);
+                document.write("<br/>")
+                let btn=document.createElement("button")
+                btn.innerText="Go Back"
+                btn.addEventListener("click",()=>{
+                    window.location.reload();
+                })
+                document.body.appendChild(btn);
+            }
+            function allOperations()
+            {
+                let a=document.getElementById("userinputa").value*1;
+                let b=document.getElementById("userinputb").value*1;
+                let add=a+b;
+                let sub=a-b;
+                let mul=a*b;
+                let divide=a/b;
+                document.write("Addition : "+add);
+                document.write("<br/>Subtraction : "+sub);
+                document.write("<br/>Multiplication : "+mul);
+                document.write("<br/>Division : "+divide);
+                document.write("<br/>")
+                let btn=document.createElement("button")
+                btn.innerText="Go Back"
+                btn.addEventListener("click",()=>{
+                    window.location.reload();
+                })
+                document.body.appendChild(btn);
+            }
+        </script>
+        <script>
+          
+          function changebgcolor()
+            {
+                let colorname=document.getElementById("pickcolor").value;
+                document.body.bgColor=colorname;
+
+
+            }
+          
+            function changecolorbyname(){
+                let colorname=prompt("Enter the new background color")
+                document.body.bgColor=colorname;
+            }
+            function changetextcolor()
+            {
+                let colorname = document.getElementById("pickcolor").value;
+                document.body.style.color=colorname;
+            }
+            let fact=(n)=>
+            {
+
+                if(n>=1){
+                    return n*fact(n-1);
+                }
+
+                else{
+                    return 1;
+                } 
+                    
+            }
+            function factorial(){
+                let num=document.getElementById("num1").value*1;
+                let result=fact(num);
+                document.getElementById("result").innerHTML="<font color='green'>"+result+"</font>"
+            }
+        </script>
+</head>
+<body>
+    <button onclick="numberconvention()">Generate</button>
+    <hr>
+    <b>Parameterized Function</b><br><br>
+    <label for="userinputa">Value one: </label>
+    <input type="number" id="userinputa" placeholder="enter value for a">
+    <br>
+    <label for="userinputb">Value two: </label>
+    <input type="number" id="userinputb" placeholder="enter value for b">
+<br><br>
+  <button onclick="allOperations()">Perform Operation</button>
+  <br><br>
+  <hr>
+  <b>Window Object <br><br>
+  </b>
+  <button onclick="alert('This Is Alert PopUp')">alert</button>
+  <button onclick="confirm('Are you sure? ')">confirm</button>
+  <button onclick="prompt('Enter you name ')">prompt</button>
+<br><br><hr><br>
+<h3>getElementById methods of document</h3>
+<b>Change background Color</b><br><br>
+<label for="pickcolor">Pick color</label>
+<input type="color" id="pickcolor"><br><br>
+<button onclick="changecolorbyname()">Type the color</button>
+<button onclick="changebgcolor()">Change backgroudn color</button>
+<button onclick="changetextcolor()">Change text color</button>
+<br><br><hr><br><br>
+<b><h3>Factorial Program</h3></b>
+<input type="number" id="num1"><br>
+<h3 id="result"></h3>
+<button onclick="factorial()">Calculate Factorial</button>
+<br><br><br><br>
+</body>
+</html>
