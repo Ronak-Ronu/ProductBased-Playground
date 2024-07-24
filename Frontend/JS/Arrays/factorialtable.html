@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial table</title>
+    <script>
+        const factorial=()=>{
+            let n=parseInt(document.getElementById("io").value)
+            let result="<table border='1'>"
+            result+="<tr><th>Numbers</th><th>Factorial</th></tr>"
+
+            for (let i = 1; i <=n; i++) {
+                let fact=1;
+                for (let j = 1; j<=i; j++) {
+                    fact=fact*j;    
+                }
+                result+="<tr><td>"+i+"</td><td>"+fact+"</td></tr>"
+            }
+            result+="</table>"
+            document.getElementById("ResultDiv").innerHTML=result
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="io">
+    <button onclick="factorial()">click</button>
+    <div id="ResultDiv"></div>
+</body>
+</html>

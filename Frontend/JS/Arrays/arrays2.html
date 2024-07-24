@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta http-equiv="refresh" content="5" > -->
+    <title>Arrays</title>
+    <script>
+        function displayarray() {
+            let languages = new Array("C","C++","Java");
+            document.write(languages[0]+", ")
+            document.write(languages[1]+", ")
+            document.write(languages[2]+" ")
+            document.write("<br/>")
+            languages.forEach(element => {
+                document.write("<br/>"+element)
+            });
+        }
+        
+    </script>
+</head>
+<body onload="displayarray()">
+    
+</body>
+</html>

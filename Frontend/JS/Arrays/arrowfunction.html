@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js arrow function</title>
+</head> 
+<body >      
+    <p onmouseover="highlight('yellow',1)" onmouseout="highlightout()" id="ptag" >The arrow function in javascript allow us to crete a shorter and anonymous function</p>
+    <p onmouseover="highlight('blue',2)" onmouseout="highlightout()" id="ptag2" >arrow function are writeen without function keyword</p>
+    <p onmouseover="highlight('red',3)" onmouseout="highlightout()" id="ptag3">the javascript arrow functions are introducted in ES6</p>
+    <br><hr><br>
+    
+    <script>
+        let highlight=(color,id)=>{
+                let ptag=document.getElementById("ptag");
+                let ptag2=document.getElementById("ptag2");
+                let ptag3=document.getElementById("ptag3");
+                if(id==1)
+                {
+
+                    ptag.style.backgroundColor=color
+                }
+                if(id==2)
+                {
+
+                    ptag2.style.backgroundColor=color
+                }
+                if(id==3)
+                {
+
+                    ptag3.style.backgroundColor=color
+                }
+
+        }
+        let highlightout=()=>{
+            let ptag=document.getElementById("ptag");
+            let ptag2=document.getElementById("ptag2");
+            let ptag3=document.getElementById("ptag3");
+
+                ptag.style.backgroundColor="white"
+                ptag2.style.backgroundColor="white"
+                ptag3.style.backgroundColor="white"
+
+        }
+    </script>
+
+
+
+</body>
+</html>

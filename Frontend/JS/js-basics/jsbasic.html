@@ -75,8 +75,7 @@
                 let colorname = document.getElementById("pickcolor").value;
                 document.body.style.color=colorname;
             }
-            let fact=(n)=>
-            {
+            let fact=(n)=>{
 
                 if(n>=1){
                     return n*fact(n-1);
@@ -87,7 +86,7 @@
                 } 
                     
             }
-            function factorial(){
+            let factorial=()=>{
                 let num=document.getElementById("num1").value*1;
                 let result=fact(num);
                 document.getElementById("result").innerHTML="<font color='green'>"+result+"</font>"
