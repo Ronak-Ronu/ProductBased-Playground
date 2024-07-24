@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prime Number</title>
+    <script>
+        let isprime = (n,i)=>{
+            if(n<=2)
+        {
+            return (n===2)?true:false;
+        }
+        if(n%i===0)
+        {
+            return false;
+        }
+        if(i*i>n)
+        {
+            return true;
+        }
+        return isprime(n,i+1);
+        }
+        function prime()
+        {
+            let pnum=document.getElementById("num1").value*1;
+            let output=isprime(pnum,2);
+            document.getElementById("output").innerHTML="<font color='green'>"+output+"</font>"
+        }
+    </script>
+</head>
+<body>
+    <b><h3>Prime Number</h3></b>
+<input type="number" id="num1" placeholder="enter any number">
+<h3 id="output"></h3>
+<button onclick="prime()">Is Prime</button>
+
+<br><br><br><br>
+
+</body>
+</html>

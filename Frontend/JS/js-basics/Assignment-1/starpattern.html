@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star pattern</title>
+    <script>
+        function printstar()
+        {
+            let row=document.getElementById("row").value*1;
+            for(let i=0;i<row;i++)
+        {
+            for(let j=0;j<row;j++)
+            {
+                if(j>=0 && j<=i){
+                    document.write("*")
+                }
+                else{
+                    document.write(" ")
+                }
+            }
+            document.write("<br/>")
+        }
+        let btn=document.createElement("button")
+                btn.innerText="Try Again ?"
+                btn.addEventListener("click",()=>{
+                    window.location.reload();
+                })
+                document.body.appendChild(btn);
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Print Start Pattern</h1>
+    <input type="number"  id="row">
+    <button onclick="printstar()">Print</button>
+    <p id="res"></p>
+</body>
+</html>

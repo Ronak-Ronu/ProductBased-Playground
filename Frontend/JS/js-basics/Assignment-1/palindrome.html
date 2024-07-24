@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+    <script>
+        function checkpalin(word)
+        {
+           let start=0;
+           let end=word.length-1;
+           let flag=false;
+           while(start<end)
+           {
+            if(word.charAt(start)==word.charAt(end))
+             {
+            flag=true;
+            }
+            else{
+                flag=false;
+            }
+            start++;
+            end--;
+           }
+
+           if(flag){
+            return true;
+           }
+           else{
+            return false;
+           }
+        }
+        function checkpalindrome(){
+            let word=document.getElementById("word").value;
+            let res=checkpalin(word);
+            document.getElementById("result").innerText=res
+        }
+    </script>
+</head>
+<body>
+    <h1>Is String Palindrome</h1>
+    <input type="text" placeholder="enter a word" id="word">
+    <button onclick="checkpalindrome()">Check palindrom</button>
+    <p id="result"></p>
+</body>
+</html>

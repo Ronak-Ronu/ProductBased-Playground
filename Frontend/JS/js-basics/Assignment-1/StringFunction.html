@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function</title>
+    <style>
+        h2{
+            color: green;
+        }
+    </style>
+<script>
+        function getlength()
+        {
+
+            let word=document.getElementById("word").value;
+            document.getElementById("res").innerText="Length is :"+word.length  
+        }
+
+        function getcharat(){
+            let word=document.getElementById("word").value;
+            let index=document.getElementById("index").value*1;
+            let res=word.charAt(index);
+            document.getElementById("res2").innerText="Char At index "+index+" is :"+res  
+        }
+        function slicetheword()
+        {
+            let word=document.getElementById("word").value;
+            let spoint=document.getElementById("spoint").value*1;
+            let epoint=document.getElementById("epoint").value*1;
+            let res=word.slice(spoint,epoint)   
+            document.getElementById("res3").innerText="Sliced word "+res 
+
+        }
+
+        function getsubstring()
+        {
+            let word=document.getElementById("word").value;
+            let ind1=document.getElementById("ind1").value*1;
+            let ind2=document.getElementById("ind2").value*1;
+            let res=word.substring(ind1,ind2)   
+            document.getElementById("res4").innerText="Substring word "+res 
+        }
+
+
+        function getsubstring2()
+        {
+            let word=document.getElementById("word").value;
+            let substr1=document.getElementById("substr1").value*1;
+            let res=word.substring(substr1)   
+            document.getElementById("res5").innerText="Substring word "+res 
+        }
+
+        function convertuppecase()
+        {
+            let word=document.getElementById("word").value;
+            let res=word.toUpperCase();
+            document.getElementById("res6").innerText="Uppercase word "+res 
+        }
+        function convertlowercase()
+        {            
+            let word=document.getElementById("word").value;
+            let res=word.toLowerCase();
+            document.getElementById("res6").innerText="LowerCase word "+res 
+
+        }
+
+
+        function concatstring()
+        {
+            let word=document.getElementById("word").value;
+            let concatword=document.getElementById("concatword").value;
+            let res=word.concat(concatword)
+            document.getElementById("res7").innerText="New word "+res 
+
+        }
+
+
+        function trimthestring()
+        {
+            let word=document.getElementById("trimword").value;
+            let res=word.trim();
+            document.getElementById("res8").innerText="Trimmed word "+res 
+
+        }
+        function trimthestringstart()
+        {
+            let word=document.getElementById("trimword").value;
+            let res=word.trimStart();
+            document.getElementById("res8").innerText="Trimmed word "+res 
+
+        }
+        function trimthestringend()
+        {
+            let word=document.getElementById("trimword").value;
+            let res=word.trimEnd();
+            document.getElementById("res8").innerText="Trimmed word "+res 
+
+        }
+
+
+        function repeattheword()
+        {
+            let word=document.getElementById("repeatword").value;
+            let num=document.getElementById("repeatnum").value*1;
+            let res=word.repeat(num);
+            document.getElementById("res9").innerText="Repeat:  "+res 
+
+        }
+
+
+        function replacetheword()
+        {
+            let parentword=document.getElementById("parentword").value;
+            let whichword=document.getElementById("whichword").value;
+            let replaceword=document.getElementById("replaceword").value;
+            let res=parentword.replace(whichword,replaceword)
+            document.getElementById("res10").innerText="Replaced:  "+res 
+
+        }
+
+        function splitword()
+        {
+            let splitword=document.getElementById("splitword").value;
+            let splitsymbol=document.getElementById("splitsymbol").value;
+            let res=splitword.split(splitsymbol)
+            document.getElementById("res11").innerText="Split:  "+res   
+
+        }
+    </script>
+</head>
+<body>
+    <h1>String Functions</h1>
+    <input type="text" id="word" placeholder="enter a word">
+    <button onclick="getlength()">Get the Length</button>
+    <h2 id="res"></h2>
+    <br>
+    <hr>
+    <br>
+    <h1>Get Char At index </h1>
+    <input type="number" placeholder="enter index to fetch char" id="index">
+    <button onclick="getcharat()">Get CharAt</button>
+    <h2 id="res2"></h2> 
+    <br><hr><br>
+    <h1>Slice the word</h1>
+    <input type="number" placeholder="enter start point index" id="spoint">
+    <input type="number" placeholder="enter end point index" id="epoint">
+    <button onclick="slicetheword()">Slice The Word</button>
+    <h2 id="res3"></h2>
+    <br><hr><br>
+    <h1>Get Substring of word</h1>
+    <input type="number" placeholder="enter index1 for substrin" id="ind1">
+    <input type="number" placeholder="enter index2 for substring" id="ind2">
+    <button onclick="getsubstring()">Get SubString</button>     
+    <h2 id="res4"></h2>
+    <br><hr><br>
+    <h1>Get Substring of word from specific index</h1>
+    <input type="number" placeholder="enter index1 for substring " id="substr1">
+    <button onclick="getsubstring2()">Get SubString </button> 
+    <h2 id="res5"></h2>
+    <br><hr><br>
+    <h1>CONVERT UPPERCASE</h1>
+    <button onclick="convertuppecase()">UpperCase</button> 
+    <button onclick="convertlowercase()">Lowercase</button> 
+    <h2 id="res6"></h2>
+    <br><hr><br>
+    <h1>Concat a new word</h1>
+    <input type="text" id="concatword" placeholder="enter word to concat">
+    <button onclick="concatstring()">concat this word</button>
+    <h2 id="res7"></h2>
+    <br><hr><br>
+    <h1>Trim the word</h1>
+    <input type="text" id="trimword" placeholder="enter a word to trim">
+    <button onclick="trimthestring()">Trim and give</button>
+    <button onclick="trimthestringstart()">Trim start</button>
+    <button onclick="trimthestringend()">Trim end</button>
+    <h2 id="res8"></h2>
+    <br><hr><br>
+    <h1>Repeat the word</h1>
+    <input type="text" id="repeatword" placeholder="enter a text">
+    <input type="number" id="repeatnum" placeholder="enter number of types to repeat">
+    <button onclick="repeattheword()">Print Repeat</button>
+    <h2 id="res9"></h2>
+    <br><hr><br>
+    <h1>Replace the word</h1>
+    <input type="text" id="parentword" placeholder="enter the string">
+    <input type="text"  id="whichword" placeholder="what to replace ">
+    <input type="text" id="replaceword" placeholder="which word to replace">
+    <button onclick="replacetheword()">Replace</button>
+    <h2 id="res10"></h2>
+    <br><hr><br>
+    <h1>Split with Word</h1>
+    <input type="text"  id="splitword" placeholder="enter text (, | )">
+    <input type="text" id="splitsymbol" placeholder="enter split symbol">
+    <button onclick="splitword()">Split</button>
+    <h2 id="res11"></h2>
+    <br><hr><br>
+</body>
+</html>

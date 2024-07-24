@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script events</title>
+    <script>
+             function changetextcolor()
+            {
+                let colorname = document.getElementById("pickcolor").value;
+                document.body.style.color=colorname;
+            }
+          
+            function changebgcolor()
+            {
+                let colorname=document.getElementById("pickcolor").value;
+                document.body.bgColor=colorname;
+
+
+            }
+
+            function changecolore()
+            {
+                let selectcolor=document.getElementById("selectcolor").value;
+                document.body.style.color=selectcolor;
+
+            }
+
+            function onchangebgcolor()
+            {
+                let selectcolor=document.getElementById("selectingcolor").value;
+                document.body.bgColor=selectcolor;
+
+            }
+            function mouseenter()
+            {
+                let h2tag=document.getElementById("h2tag");
+                h2tag.style.backgroundColor="yellow"
+
+            }
+            function mouseout()
+            {
+                let h2tag=document.getElementById("h2tag");
+                h2tag.style.backgroundColor="white"
+
+            }
+
+
+            function changecolorondown()
+            {
+                let inputbox=document.getElementById("inputbox")
+                inputbox.style.backgroundColor="blue"
+            }
+            function changecoloronup()
+            {
+                let inputbox=document.getElementById("inputbox")
+                inputbox.style.backgroundColor="white"
+
+            }
+
+            function displaytextonpress()
+            {
+                let inputbox=document.getElementById("inputbox")
+                let resofonkeypress=document.getElementById("resofonkeypress")
+                resofonkeypress.innerText=inputbox.value
+
+            }
+
+            function displaythetext()
+            {
+                alert("star pattern html file is loaded .");
+            }
+    </script>
+</head>
+<body>
+    <h1>Java Script Events</h1>
+    <hr>
+    <h2>Onclick events</h2>
+    <p>Onclick to change bgcolor,textcolor</p>
+    <input type="color" id="pickcolor"><br><br>
+    <button onclick="changebgcolor()">Change backgroudn color</button>
+    <button onclick="changetextcolor()">Change text color</button>
+    <br><hr><br>
+    <h2>onchange</h2>
+    <label for="selectcolor">Select color</label>
+    <select name="selectcolor" id="selectcolor" onchange="changecolore()">
+        <option value="none">none</option>
+        <option value="black">black</option>
+        <option value="blue">blue</option>
+        <option value="green">green</option>
+        <option value="pink">pink</option>
+        <option value="red">red</option>
+        <option value="violet">violet</option>
+    </select>
+    <p>or</p>
+    <label for="selectingcolor">Change background color</label>
+    <input type="color" onchange="onchangebgcolor()" id="selectingcolor"></input>
+    <br><hr><br>
+    <h2>OnmouseOver and onmouseout Event</h2>
+    <p> created hover using js to below text</p>
+    <h2 onmouseover="mouseenter()" onmouseout="mouseout()" id="h2tag">This triggers on mouseOver</h2>
+    <br><hr><br>
+    <h2>Onkey</h2>
+    <ul>
+        <li>onkeydown</li>
+        <li>onkeypress</li>
+        <li>onkeyup</li>
+    </ul>
+    <input type="text" onkeydown="changecolorondown()" onkeyup="changecoloronup()" onKeyPress="displaytextonpress()" id="inputbox">
+    <p id="resofonkeypress"></p>
+
+    <br><hr><br>
+<h2>onLoad Event</h2>
+    <iframe src="starpattern.html" onload="displaythetext()" frameborder="0"></iframe>
+</body>
+</html>

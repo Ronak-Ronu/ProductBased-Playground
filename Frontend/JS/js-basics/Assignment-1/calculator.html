@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin-top: 10%;
+}
+
+.calcborder {
+  width: 200px;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.inputtext {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: right;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+button {
+  background-color: rgb(0, 213, 255);
+  color: black ;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+button:hover {
+  background-color: rgb(174, 234, 247);
+}
+
+input{
+  font-size: 20px;
+  background-color: #f2f2f2;
+  border: none;
+  width: 100%;
+}
+
+input:focus{
+  outline: none;
+}
+</style>  
+</head>
+<body>
+
+<div class="calcborder">
+  <div class="inputtext"><input type="text" id="display" disabled></div>
+  <div class="buttons">
+    <button onclick="clearDisplay()">C</button>
+    <button onclick="putvaluetoinput('%')">%</button>
+    <button onclick="backspace()">←</button>
+    <button onclick="putvaluetoinput('/')">/</button>
+    <button onclick="putvaluetoinput('7')">7</button>
+    <button onclick="putvaluetoinput('8')">8</button>
+    <button onclick="putvaluetoinput('9')">9</button>
+    <button onclick="putvaluetoinput('*')">*</button>
+    <button onclick="putvaluetoinput('4')">4</button>
+    <button onclick="putvaluetoinput('5')">5</button>
+    <button onclick="putvaluetoinput('6')">6</button>
+    <button onclick="putvaluetoinput('-')">-</button>
+    <button onclick="putvaluetoinput('1')">1</button>
+    <button onclick="putvaluetoinput('2')">2</button>
+    <button onclick="putvaluetoinput('3')">3</button>
+    <button onclick="putvaluetoinput('+')">+</button>
+    <button onclick="putvaluetoinput('00')">00</button>
+    <button onclick="putvaluetoinput('0')">0</button>
+    <button onclick="putvaluetoinput('.')">.</button>
+    <button onclick="result()">=</button>
+  </div>
+</div>
+
+
+<script>
+    let display = document.getElementById('display');
+    let calculation = '';
+  
+    function putvaluetoinput(value) {
+      calculation += value;
+      display.value = calculation;
+    }
+  
+    function result() {
+        calculation = eval(calculation);
+        display.value = calculation;
+    }
+  
+    function clearDisplay() {
+      calculation = '';
+      display.value = '';
+    }
+  
+    function backspace() {
+      calculation = calculation.slice(0, -1);
+      display.value = calculation;
+    }
+  
+  </script>
+
+</body>
+</html>
