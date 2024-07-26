@@ -3,7 +3,7 @@
 <head>
 <style>
 body {
-  font-family: Arial, sans-serif;
+  font-family: monospace ;
   margin-top: 10%;
 }
 
@@ -18,7 +18,7 @@ body {
 
 .inputtext {
   background-color: #f2f2f2;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   padding: 10px;
   text-align: right;
   font-size: 18px;
@@ -27,13 +27,16 @@ body {
 }
 
 .buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 button {
-  background-color: rgb(0, 213, 255);
+  flex:1 20%;
+  background-color: rgb(24, 209, 154);
   color: black ;
   padding: 10px;
   text-align: center;
@@ -41,8 +44,9 @@ button {
   margin: 4px 2px;
   border-radius: 5px;
   cursor: pointer;
-  border: 1px solid black;
+  border: 2px solid black;
 }
+
 
 button:hover {
   background-color: rgb(174, 234, 247);
@@ -59,7 +63,10 @@ input:focus{
   outline: none;
 }
 </style>  
+
 </head>
+
+
 <body>
 
 <div class="calcborder">

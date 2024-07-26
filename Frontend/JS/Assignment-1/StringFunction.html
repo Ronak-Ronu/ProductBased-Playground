@@ -12,7 +12,6 @@
 <script>
         function getlength()
         {
-
             let word=document.getElementById("word").value;
             document.getElementById("res").innerText="Length is :"+word.length  
         }
@@ -47,7 +46,7 @@
         {
             let word=document.getElementById("word").value;
             let substr1=document.getElementById("substr1").value*1;
-            let res=word.substring(substr1)   
+            let res=word.substr(substr1)
             document.getElementById("res5").innerText="Substring word "+res 
         }
 
@@ -124,7 +123,7 @@
             let splitword=document.getElementById("splitword").value;
             let splitsymbol=document.getElementById("splitsymbol").value;
             let res=splitword.split(splitsymbol)
-            document.getElementById("res11").innerText="Split:  "+res   
+            document.getElementById("res11").innerText="Split:  "+res[0]   
 
         }
     </script>
