@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    <title>Bootstrap Dropdown Menu with Header Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
 </head>
 <body>
-    <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" >
-          Tutorials
-        </button>
-        <div class="dropdown-menu" >
-          <h6 class="dropdown-header">Databases</h6>
-          <a class="dropdown-item" href="#">MySQL</a>
-          <a class="dropdown-item" href="#">SQL Server</a>
-          <a class="dropdown-item" href="#">SQLite</a>
-         <hr>
-          <h6 class="dropdown-header">Programming</h6>
-          <a class="dropdown-item" href="#">Java</a>
-          <a class="dropdown-item" href="#">.NET</a>
-          <a class="dropdown-item" href="#">Python</a>
+    <br>
+    <div class="container bcontent">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Tutorials
+            </button>
+            <div class="dropdown-menu">
+                <div class="dropdown-header">Databases</div>
+                <a class="dropdown-item" href="#">MySQL</a>
+                <a class="dropdown-item" href="#">SQL Server</a>
+                <a class="dropdown-item" href="#">SQLite</a>
+                <div class="dropdown-header">Programming</div>
+                <a class="dropdown-item" href="#">Java</a>
+                <a class="dropdown-item" href="#">.NET</a>
+                <a class="dropdown-item" href="#">Python</a>
+            </div>
         </div>
-      </div>
-
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    </body>
+    </div>
+</body>
 </html>
