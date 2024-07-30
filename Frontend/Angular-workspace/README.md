@@ -29,8 +29,13 @@ git checkout master
 ```cmd
 git sparse-checkout set Angular-workspace
 ```
+ 
+6. install required packages inside BeRony folder
+```cmd
+npm install
+```
 
-6. To run angular 
+7. To run angular 
 ```cmd
 ng serve -o
 ```
