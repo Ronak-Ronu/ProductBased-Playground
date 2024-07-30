@@ -8,13 +8,21 @@ import { Component } from '@angular/core';
 export class NewcmpComponent {
   name:string;
   green:string;
-  hidenames=false;
+  visibility:boolean=false;
+  newvar:string="";
+  pickedcolor:string="black"
+
   constructor()
     {
       this.name="rony"
       this.green="green"
     }
-  data:string[]=["ronak","ronu","dwight","michale","jim"]
+
+
+  names:string[]=["ronak","ronu","dwight","michale","jim"];
+
+
+
   alertdata()
   {
     alert("Name : "+this.name)
@@ -28,8 +36,14 @@ export class NewcmpComponent {
     this.name="Rony"
   }
   
-  hideuserdata()
+  changevisiblity()
   {
-    this.hidenames=!this.hidenames;
+    // this.hidenames=this.hidenames?false:true
+    this.visibility= !this.visibility
   }
+  changefontcolor(colorpicked:string)
+  {
+    this.pickedcolor=colorpicked
+  }
+
 }

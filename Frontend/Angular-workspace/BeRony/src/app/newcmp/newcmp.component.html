@@ -1,0 +1,109 @@
+<div [ngStyle]="{'color':pickedcolor}">
+<p>change font color</p> 
+
+<table border="1">
+    <tr>
+        <th>color</th>
+        <th>pick</th>
+    </tr>
+    <tr>
+        <td>red</td>
+        <td>
+            
+            <button (click)="changefontcolor('red')">red</button>
+        </td>
+    </tr>
+    <tr>
+        <td>blue</td>
+        <button (click)="changefontcolor('blue')">blue</button>
+    </tr>
+    <tr>
+        <td>green</td>
+        <button (click)="changefontcolor('green')">green</button>
+    </tr>
+    <tr>
+        <td>pink</td>
+        <td><button (click)="changefontcolor('pink')">pink</button>
+        </td>
+    </tr>
+    <tr>
+        <td>brown</td>
+        <td><button (click)="changefontcolor('brown')">brown</button>
+
+    </tr>
+</table>
+
+
+<br>
+    <p>Change name to ...</p>
+    <p><b>Current Name</b> : {{name}}</p>
+    <br>
+
+
+    <!-- ngFor  -->
+     <p>Got the buttons with name using ngFor</p>
+     <table border="1"> 
+         <th ><p id="ngfor-practice">User List:</p></th>
+        <div *ngFor="let name of names" [hidden]="visibility" >
+            <tr>
+                <button (click)="updatedata(name)">Update to {{name}}</button> 
+            </tr>
+        </div>
+     </table>
+    <br>
+
+    <button  (click)="alertdata()">Get Data</button>
+
+    <button (click)="resetdata()">reset data</button>
+   
+    <p id="ngif-practice">Illustrated the hide and unhide button using <b>ngif</b></p>
+   
+   
+    <div *ngIf="visibility==false">
+        <button (click)="changevisiblity()">Hide * Data</button>
+    </div>
+
+    <div *ngIf="visibility==true">
+        <button (click)="changevisiblity()">Unhide * Data</button>
+    </div>
+
+<hr>
+<br>
+
+<p><b>TWO WAY DATA BINDING</b></p>
+<p><b>ngModel</b> - predefined directive in the angular </p>
+<p >to use ngModel we have to import form modules inside app.module.ts &#x40;angular/Forms </p>
+
+<input type="text" [(ngModel)]="newvar" />
+<p >Typing : <span  style="background-color: rgb(185, 199, 245);"> {{newvar}}  </span></p>
+<br>
+<hr>
+<p><b>Directives</b></p>
+<ul>
+    <li>&#x40;component directive- to make class component (selector,templateurl,styleurls)</li>
+    <li>structural directives</li>
+    <ul>
+        <li>ngif <a href="#ngfor-practice">view</a></li>
+        <li>ngFor <a href="#ngif-practice">view</a></li>
+        <li>ngSwitch <a href="#ngswitch-practice">view</a></li>
+        <ul>
+            <li>ngSwitchCase</li>
+            <li>ngSwitchDefault</li>
+        </ul>
+        <li>Attribute Directive- change the appearance of the element</li>
+        <ul>
+            <li>ngStyle</li>
+            <li>ngClass</li>
+            <li>ngModel</li>
+        </ul>
+    </ul>
+</ul>
+<br>
+<br>
+
+
+
+
+
+
+</div>
