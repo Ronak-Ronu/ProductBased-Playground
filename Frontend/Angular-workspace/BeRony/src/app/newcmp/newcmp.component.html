@@ -1,7 +1,7 @@
 <div [ngStyle]="{'color':pickedcolor}">
-<p>change font color</p> 
+    <p>change font color</p> 
 
-<table border="1">
+<table  class="table-primary">
     <tr>
         <th>color</th>
         <th>pick</th>
@@ -52,19 +52,19 @@
      </table>
     <br>
 
-    <button  (click)="alertdata()">Get Data</button>
+    <button  (click)="alertdata()" class="btn btn-info">Get Data</button>
 
-    <button (click)="resetdata()">reset data</button>
+    <button (click)="resetdata()" class="btn btn-warning">reset data</button>
    
     <p id="ngif-practice">Illustrated the hide and unhide button using <b>ngif</b></p>
    
    
     <div *ngIf="visibility==false">
-        <button (click)="changevisiblity()">Hide * Data</button>
+        <button (click)="changevisiblity()" class="btn btn-primary">Hide * Data</button>
     </div>
 
     <div *ngIf="visibility==true">
-        <button (click)="changevisiblity()">Unhide * Data</button>
+        <button (click)="changevisiblity()" class="btn btn-danger">Unhide * Data</button>
     </div>
 
 <hr>
@@ -73,7 +73,6 @@
 <p><b>TWO WAY DATA BINDING</b></p>
 <p><b>ngModel</b> - predefined directive in the angular </p>
 <p >to use ngModel we have to import form modules inside app.module.ts &#x40;angular/Forms </p>
-
 <input type="text" [(ngModel)]="newvar" />
 <p >Typing : <span  style="background-color: rgb(185, 199, 245);"> {{newvar}}  </span></p>
 <br>
