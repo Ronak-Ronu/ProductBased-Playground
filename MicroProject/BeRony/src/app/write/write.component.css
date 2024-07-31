@@ -1,0 +1,24 @@
+.writemainbody{
+    height: 85vh;
+}
+.headingwrite{
+    font-size: 64px;
+    font-weight: bold;
+    padding: 40px ;
+    margin-left: 20%;
+}
+.writebody{
+    height: 85vh;
+    width: 100vw;
+}
+.writeablewindow{
+    height: 100vh;
+    width: 70vw;
+    background-color: grey;
+}
+
+.draftswindow{
+    height: 100vh;
+    width: 20vw;
+    background-color: grey;
+}
