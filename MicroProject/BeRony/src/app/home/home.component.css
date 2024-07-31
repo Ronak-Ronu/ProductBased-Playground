@@ -1,0 +1,12 @@
+.bodyelement{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerelements{
+    text-align: center;
+    line-height: 4px;
+}
