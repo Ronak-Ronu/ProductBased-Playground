@@ -1,0 +1,17 @@
+
+.writemainbody{
+    height: 85vh;
+}
+.headingwrite{
+    font-size: 64px;
+    font-weight: bold;
+    padding: 40px ;
+    margin-left: 20%;
+}
+.aboutrony{
+    padding: 40px ;
+    margin-left: 20%;
+    font-weight: bolder;
+    font-size: 26px;
+    line-height: 45px;
+}
