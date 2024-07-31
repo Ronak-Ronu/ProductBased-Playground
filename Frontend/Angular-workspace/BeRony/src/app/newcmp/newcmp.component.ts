@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { PracticengforComponent } from '../practicengfor/practicengfor.component';
 @Component({
   selector: 'app-newcmp',
   templateUrl: './newcmp.component.html',
@@ -11,7 +11,6 @@ export class NewcmpComponent {
   visibility:boolean=false;
   newvar:string="";
   pickedcolor:string="black"
-
   constructor()
     {
       this.name="rony"
@@ -27,10 +26,12 @@ export class NewcmpComponent {
   {
     alert("Name : "+this.name)
   }
+
   updatedata(newname:string)
   {
     this.name=newname
   }
+
   resetdata()
   {
     this.name="Rony"

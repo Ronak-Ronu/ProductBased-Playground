@@ -1,33 +1,69 @@
+<table class="d-flex justify-content-around">
+  <tr>
+    <th><a routerLink="/home" >HOME</a> </th>
+    <th>&nbsp;</th>
+    <th><a routerLink="/about" >ABOUT</a></th>
+    <th>&nbsp;</th>
+    <th><a routerLink="/contact" >CONTACT</a></th>
+    <th>&nbsp;</th>
 
-<main class="main">
+    <th><a routerLink="/newcmp" >PRACTICE AREA</a></th>
+  </tr>
+</table>
+
+<div>
+
+  <div class="editbutton" *ngIf="isedit">
+      <input type="text" [(ngModel)]="name" >
+      <div (click)="editclicked()" style="cursor: pointer;"><button class="btn btn-success">DONE</button></div>
+
+  </div> 
+
+  <div *ngIf="isedit==false">
+    <h3>username : {{name}} </h3> 
+      <div (click)="editclicked()"  style="cursor: pointer;"><button class="btn btn-info">EDIT</button></div>
+  </div>
+</div>
+
+
+<hr>
+
+<router-outlet></router-outlet>
+
+
+
+
+
+
+
+  <main class="main">
+
   <h1 id="ngswitch-practice"  >Name changer</h1>
   <button (click)="updaterole('admin')">use as admin</button> &nbsp;
   <button (click)="updaterole('user')">use as user</button>&nbsp;
   <button (click)="updaterole('default')">use as default user</button>
-
-
+  
   <!-- ng switch example -->
   <p>buttons for switching roles are illustrated using <b>ngswitch structural directive</b></p>
   <div [ngSwitch]="roletype">
-        
-        <div *ngSwitchCase="'admin'">
-          <p>Hello {{roletype}}</p>
-          <app-newcmp></app-newcmp>
-        </div>
-
-        <div *ngSwitchCase="'user'">
-          <p>hello {{roletype}}</p>
-          <p>you are authorized as user</p>
-        </div>
-
-        <div *ngSwitchDefault>
-          <p>hello default</p>
-          <p>you are authorized as default user</p>
-        </div>
-
+    
+    <div *ngSwitchCase="'admin'">
+      <p>Hello {{roletype}}</p>
+      <app-newcmp></app-newcmp>
+    </div>
+    
+    <div *ngSwitchCase="'user'">
+      <p>hello {{roletype}}</p>
+      <p>you are authorized as user</p>
+    </div>
+    
+    <div *ngSwitchDefault>
+      <p>hello default</p>
+      <p>you are authorized as default user</p>
+    </div>
   </div>
   
-</main>
 
 
-<router-outlet />
+</main> 
+

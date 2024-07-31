@@ -1,0 +1,10 @@
+<p>practicengfor works!</p>
+<table border="1"> 
+    <th ><p id="ngfor-practice">User List:</p></th>
+   <div *ngFor="let name of names" [hidden]="visibility" >
+       <tr>
+        <!-- <p>{{name}}</p> -->
+           <button (click)="updatedata(name)">Update to {{name}}</button> 
+       </tr>
+   </div>
+</table>

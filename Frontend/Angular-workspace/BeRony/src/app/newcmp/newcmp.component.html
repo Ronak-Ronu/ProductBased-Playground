@@ -42,14 +42,8 @@
 
     <!-- ngFor  -->
      <p>Got the buttons with name using ngFor</p>
-     <table border="1"> 
-         <th ><p id="ngfor-practice">User List:</p></th>
-        <div *ngFor="let name of names" [hidden]="visibility" >
-            <tr>
-                <button (click)="updatedata(name)">Update to {{name}}</button> 
-            </tr>
-        </div>
-     </table>
+    
+     <app-practicengfor [names]="names" [visibility]="visibility"  ></app-practicengfor>
     <br>
 
     <button  (click)="alertdata()" class="btn btn-info">Get Data</button>
@@ -100,7 +94,7 @@
 <br>
 <br>
 
-
+<img src="" alt="">
 
 
 
