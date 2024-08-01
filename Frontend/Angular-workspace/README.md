@@ -1,5 +1,6 @@
 ## Angular Workspace
-1. install required packages inside BeRony folder
+### BeRony 
+1. install required packages for BeRony folder
 ```cmd
 npm install
 ```
@@ -12,3 +13,7 @@ or
 ```cmd
 ng serve
 ```
+
+### EMS-Employee Management System 
+Demonstrating the ngForm and ngModel predefined directives
+
