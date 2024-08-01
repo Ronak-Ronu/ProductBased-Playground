@@ -1,0 +1,9 @@
+{
+    "posts": [
+        {"id":1,"title":"title","body":"content","end":"ending note"},
+        {"id":2,"title":"title2","body":"content2","end":"ending note2"},
+        {"id":3,"title":"title3","body":"content3","end":"ending note3"},
+        {"id":4,"title":"title4","body":"content4","end":"ending note4"}
+    ]
+
+}

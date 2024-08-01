@@ -9,6 +9,7 @@ import { WhosronyComponent } from './whosrony/whosrony.component';
 import { ReadComponent } from './read/read.component';
 import { RouterModule} from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { WriteserviceService } from './writeservice.service';
 
 const routes  = [
   {path: '', component: HomeComponent},
@@ -19,6 +20,7 @@ const routes  = [
 ``
 
 @NgModule({
+
   declarations: [
     AppComponent,
     NavbarComponent,
@@ -32,7 +34,8 @@ const routes  = [
     AppRoutingModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [WriteserviceService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
