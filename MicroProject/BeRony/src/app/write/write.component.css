@@ -1,5 +1,5 @@
 .draftcontainer::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 .draftcontainer::-webkit-scrollbar-track {
     background: #f1f1f1; 
@@ -24,16 +24,18 @@
     background-color: #f0efef;
     border-radius: 10px;
     margin-top: -40px;
-    height: 60vh;
+    height: 80vh;
     width: 60vw;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-left: 8%;
+    
 }
 .toolbar {
-    height: 14%;
+    height: 10%;
     background-color: white;
     border-radius: 10px;
     display: flex;
+    align-items: center;
     padding: 20px;
     gap: 30px;
 
@@ -67,6 +69,7 @@ textarea{
     display: flex;
     gap: 5%;
     padding:10px;
+    margin-top: 5%;
 }
 .draftcontainer{
     height: 60vh;
@@ -90,7 +93,6 @@ textarea{
     font-size: 37px;
     background-color: white;
     border-radius: 10px;
-
 }
 .draftsbody{
     height: 10%;
