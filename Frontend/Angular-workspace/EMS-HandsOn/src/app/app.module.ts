@@ -13,9 +13,12 @@ import { EmployeeserviceService } from './employeeservice.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    
   ],
-  providers: [EmployeeserviceService],
+  providers: [
+    EmployeeserviceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

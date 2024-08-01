@@ -11,7 +11,6 @@ import { ContactComponent } from './contact/contact.component';
 import { RouterModule} from '@angular/router';
 import { Service1Service } from './service1.service';
 
-
 const routes  = [
   {path: 'home', component: HomeComponent},
   {path: 'contact', component: ContactComponent},

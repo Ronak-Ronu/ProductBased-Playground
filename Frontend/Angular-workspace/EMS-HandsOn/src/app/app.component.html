@@ -6,9 +6,15 @@
   <form class="form-horizontal" #emsform="ngForm" >
 
     <div class="form-group">
-      <label class="control-label col-sm-2" for="name">Name:</label>
+      <label class="control-label col-sm-2" for="empname">Name:</label>
       <div class="col-sm-5">
-        <input type="text" class="form-control" placeholder="Enter Name" name="name" #empname="ngModel" ngModel required>
+        <input type="text" 
+        class="form-control"
+         placeholder="Enter Name"
+          name="empname" 
+          #empname="ngModel" 
+          ngModel 
+          required>
       </div>
     </div>
 
@@ -55,6 +61,8 @@
 <br><br>
 
 
+
+
 <div *ngIf="empname.touched || empid.touched || empsalary.touched">
 
   <div *ngIf="empname.errors?.['required']">
@@ -86,6 +94,9 @@
 
   
 </div>
+
+
+
 </div>
 
 
