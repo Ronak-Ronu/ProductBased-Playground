@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeserviceService } from './employeeservice.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { EmployeeserviceService } from './employeeservice.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    
+    HttpClientModule
   ],
   providers: [
     EmployeeserviceService

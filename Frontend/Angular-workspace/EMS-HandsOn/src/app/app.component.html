@@ -1,69 +1,13 @@
 
+{{empdata | json}}
+<br>
+<!-- interpolation -->
+{{result?result:"no changes"}} 
+<br>
 
-  
 <div class="container">
-    <h2>EMS-Employee Management System</h2>
-  <form class="form-horizontal" #emsform="ngForm" >
-
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="empname">Name:</label>
-      <div class="col-sm-5">
-        <input type="text" 
-        class="form-control"
-         placeholder="Enter Name"
-          name="empname" 
-          #empname="ngModel" 
-          ngModel 
-          required>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="empid">Employee ID:</label>
-      <div class="col-sm-5">
-        <input type="number" 
-        class="form-control"  
-        placeholder="Enter employee ID" 
-        name="empid" 
-        #empid="ngModel" 
-        required
-        pattern="[0-9]"
-        ngModel   >
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="salary">Salery:</label>
-      <div class="col-sm-5">          
-        <input type="number" 
-        class="form-control"
-          placeholder="Enter salary" 
-          name="salary"
-           required 
-           #empsalary="ngModel"
-            ngModel >
-      </div>
-    </div><br>
-
-    <div class="form-group">        
-
-      <div class="col-sm-offset-2 col-sm-10 ">
-
-        <button type="submit" class="btn btn-primary" (click)="insertemployee(emsform.value)">INSERT</button> &nbsp;&nbsp;
-        <button type="submit" class="btn btn-warning">UPDATE</button> &nbsp;&nbsp;
-        <button type="submit" class="btn btn-danger">DELETE</button>  &nbsp;&nbsp;
-        <button type="submit" class="btn btn-info">FIND</button>  &nbsp;&nbsp;
-        <button type="submit" class="btn btn-success">FIND ALL</button>
-
-      </div>
-   
-    </div>
-  </form>
-<br><br>
-
-
-
-
-<div *ngIf="empname.touched || empid.touched || empsalary.touched">
+  
+<div *ngIf="empname.touched || id.touched || empsalary.touched">
 
   <div *ngIf="empname.errors?.['required']">
 
@@ -76,7 +20,7 @@
     </div>
   </div>
 
-  <div *ngIf="empid.errors?.['pattern'] || empid.errors?.['required']">
+  <div *ngIf="id.errors?.['required']">
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
       <strong>Employee id is incorrect & required</strong>
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -96,9 +40,111 @@
 </div>
 
 
+    <h2>EMS-Employee Management System</h2>
+  <form class="form-horizontal" #emsform="ngForm" >
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="empname">Name:</label>
+
+      <div class="col-sm-5">
+        <input type="text" 
+        class="form-control"
+         placeholder="Enter Name"
+          name="empname" 
+          #empname="ngModel" 
+          ngModel 
+          required>
+      </div>
+
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="id">Employee ID:</label>
+      <div class="col-sm-5">
+        <input type="number" 
+        class="form-control"  
+        placeholder="Enter employee ID" 
+        name="id" 
+        #id="ngModel" 
+        required
+        ngModel   >
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="empsalary">Salery:</label>
+      <div class="col-sm-5">          
+        <input type="number" 
+        class="form-control"
+          placeholder="Enter salary" 
+          name="empsalary"
+           required 
+           #empsalary="ngModel"
+            ngModel >
+      </div>
+    </div><br>
+
+    <div class="form-group">        
+
+      <div class="col-sm-offset-2 col-sm-10 ">
+
+        <button type="submit" class="btn btn-primary" (click)="insertemployee(emsform.value)">INSERT</button> &nbsp;&nbsp;
+        <button type="submit" class="btn btn-warning" (click)="updateemployee(emsform.value)">UPDATE</button> &nbsp;&nbsp;
+        <button type="submit" class="btn btn-danger" (click)="deleteemployee(emsform.value)">DELETE</button>  &nbsp;&nbsp;
+        <button type="submit" class="btn btn-info" (click)="findemployee(emsform.value)" >FIND</button>  &nbsp;&nbsp;
+        <button type="submit" class="btn btn-success" (click)="findallemployee()">FIND ALL</button>
+
+      </div>
+   
+    </div>
+  </form>
+<br><br>
+
+
+
+
 
 </div>
+employees 
+<!-- {{getterdata| json}} -->
 
+<div *ngIf="flag">
+  <table border="1">
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>salary</th>
+    </tr>
+    <tr *ngFor="let item of employeearr">
+      <td>{{item.id}}</td>
+      <td>{{item.empname}}</td>
+      <td>{{item.empsalary}}</td>
+    </tr>
+  </table>
 
+<div *ngIf="findflag">
+  <table border="1">
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>salary</th>
+
+    </tr>
+    <tr>
+      <td>
+        <p>{{employeefind.id}}</p>
+      </td>
+      <td>
+
+        <p>{{employeefind.empname}}</p>
+      </td>
+      <td>
+
+        <p>{{employeefind.empsalary}}</p>
+      </td>
+    </tr>
+  </table>
+</div>
 
 <router-outlet ></router-outlet>
