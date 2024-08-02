@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { FormsModule } from '@angular/forms'
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -10,6 +12,7 @@ import { ReadComponent } from './read/read.component';
 import { RouterModule} from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { WriteserviceService } from './writeservice.service';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes  = [
   {path: '', component: HomeComponent},
@@ -27,11 +30,13 @@ const routes  = [
     WriteComponent,
     WhosronyComponent,
     ReadComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   providers: [WriteserviceService],

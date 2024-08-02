@@ -1,9 +1,16 @@
 {
-    "posts": [
-        {"id":1,"title":"title","body":"content","end":"ending note"},
-        {"id":2,"title":"title2","body":"content2","end":"ending note2"},
-        {"id":3,"title":"title3","body":"content3","end":"ending note3"},
-        {"id":4,"title":"title4","body":"content4","end":"ending note4"}
-    ]
-
+  "posts": [
+    {
+      "id": "1",
+      "title": "title",
+      "body": "content",
+      "end": "ending note"
+    },
+    {
+      "id": "8169",
+      "title": "How i created UI for BeRony ",
+      "bodyofcontent": "this ui for this page is build throught the process of developing the webpage \n1. thinking\n2.designing\n3.building\n4.development\nand thats a lot of think going on between.",
+      "endnotecontent": "HAPPY LEARNING:)"
+    }
+  ]
 }

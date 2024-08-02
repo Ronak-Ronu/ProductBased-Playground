@@ -5,7 +5,8 @@
     </div>
 
     <div class="bodyofwriting">
-
+        
+        
     <div class="container">
 
         <div class="toolbar">
@@ -14,21 +15,47 @@
             <button class="toolbarbutton">FORMAT</button>
             <button class="toolbarbutton">IMPORT</button>
         </div>
+        <form #writecontentform="ngForm">
 
         <div class="writecontentarea">
-            <textarea cols="83" rows="2" placeholder="TITLE GOES HERE"></textarea>
-            <textarea cols="83" rows="17" maxlength="300" placeholder="Write whatever you like!"></textarea>
-            <textarea cols="83" rows="2" maxlength="300" placeholder="Share your post script/ending note"></textarea>
+            <textarea cols="83" 
+            rows="2"
+             placeholder="TITLE GOES HERE"
+             name="title" 
+             #title="ngModel"
+             ngModel
+             required
+             ></textarea>
+
+            <textarea cols="83"
+             rows="17"
+              maxlength="300"
+               placeholder="Write whatever you like!"
+             name="bodyofcontent" 
+
+               #bodyofcontent="ngModel"
+               ngModel
+               required
+               ></textarea>
+
+            <textarea cols="83"
+             rows="2" 
+             maxlength="300" 
+             placeholder="Share your post script/ending note"
+             name="endnotecontent"
+             #endnotecontent="ngModel"
+             ngModel
+             ></textarea>
 
         </div>
 
         <div class="footerbuttons">
-            <button class="footerbutton">PUBLISH</button>
+            <button class="footerbutton" (click)="publishblog(writecontentform.value)">PUBLISH</button>
             <button class="footerbutton">SAVE AS DRAFT</button>
         </div>
 
+    </form>
     </div>
-
 
     <div class="draftcontainer">
 
