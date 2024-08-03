@@ -1,4 +1,13 @@
 # BeRony
+The place where you can bring your stories to life. Whether you want to:
+
+- **Write** your thoughts,
+- **Visualize** your ideas,
+- **Create videos** to share your message,
+
+This platform has been carefully designed to showcase my learnings, memories, and more. 
+
+So, why wait? Start creating and let the world see your work!
 
 ### Prototype
 
