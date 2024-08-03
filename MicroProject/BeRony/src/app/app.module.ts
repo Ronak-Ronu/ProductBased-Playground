@@ -13,12 +13,15 @@ import { RouterModule} from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { WriteserviceService } from './writeservice.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ReadingComponent } from './reading/reading.component';
 
 const routes  = [
   {path: '', component: HomeComponent},
   {path: 'read', component: ReadComponent},
   {path: 'write', component: WriteComponent},
-  {path: 'whosrony', component: WhosronyComponent}
+  {path: 'whosrony', component: WhosronyComponent},
+  {path: 'reading', component: ReadingComponent}
+
 ];
 ``
 
@@ -31,6 +34,7 @@ const routes  = [
     WhosronyComponent,
     ReadComponent,
     HomeComponent,
+    ReadingComponent,
   ],
   imports: [
     BrowserModule,

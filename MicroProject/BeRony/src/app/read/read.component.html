@@ -43,13 +43,23 @@
         </div>
 
         <div class="footerbuttons">
-            <button class="footerbuttoncls">READ</button>
+            <a routerLink="/reading" >
+
+                <button class="footerbuttoncls" style="cursor: pointer;">READ</button>
+            </a>
             <div class="invisiblediv"></div>
             <button class="footerbuttoncls">SAVE</button>
         </div>
 
     </div>
 </div>
+
+
+
+
+
+    <div *ngFor="let item of blogs">
+        
 <div class="contentdivs">
     <div class="thumbnail">
 
@@ -57,28 +67,8 @@
     <div class="rightcontentthumbnail">
 
         <div class="thumbnailname">
-            <p>Lorem ipsum dolor sit, amet consectetur</p>
-            <p>Lorem ipsum dolor sit, amet consectetur</p>
-            <p>Lorem ipsum dolor sit</p>
-        </div>
-
-        <div class="footerbuttons">
-            <button class="footerbuttoncls">READ</button>
-            <div class="invisiblediv"></div>
-            <button class="footerbuttoncls">SAVE</button>
-        </div>
-    </div>
-</div>
-<div class="contentdivs">
-    <div class="thumbnail">
-
-    </div>
-    <div class="rightcontentthumbnail">
-
-        <div class="thumbnailname">
-            <p>Lorem ipsum dolor sit, amet consectetur</p>
-            <p>Lorem ipsum dolor sit, amet consectetur</p>
-            <p>Lorem ipsum dolor sit</p>
+            <p>{{item.title}}</p>
+            <p>{{item.endnotecontent}}</p>
         </div>
 
         <div class="footerbuttons">
@@ -89,6 +79,8 @@
 
     </div>
 </div>
+
+    </div>
 
 
 </div>

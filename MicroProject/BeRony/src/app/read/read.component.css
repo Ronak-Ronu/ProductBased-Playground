@@ -75,8 +75,12 @@ input:focus{
     
 }
 
-.rightcontentthumbnail .thumbnailname{
+.thumbnailname{
     font-size: 25px;
+    height: 80%;
+    width: 500px;
+    text-wrap: pretty;
+    font-weight: 700;
 }
 .footerbuttons{
     display: flex;
