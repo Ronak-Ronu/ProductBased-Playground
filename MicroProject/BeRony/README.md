@@ -15,6 +15,14 @@ So, why wait? Start creating and let the world see your work!
 
 State: Development
 
+### Future Features
+- Authentication & Authorization
+- Share blogs throughtout various social media
+- Create and share video blogs or vlogs
+- Reeling Blogs and vlogs
+- will introduce Android,ios applications
+- collaborative blogging
+- monetize your ideas
 
 ## Development server
 
