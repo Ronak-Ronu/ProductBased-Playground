@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { WriteserviceService } from '../writeservice.service';
 import { WriteModel } from '../Models/writemodel';
+import { ActivatedRoute } from '@angular/router';
+// import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-read',
@@ -12,12 +14,12 @@ export class ReadComponent implements OnInit{
 
   ngOnInit(): void {
     this.readblogdata()
+    
   }
 
-  constructor(private readsevice:WriteserviceService)
-  {
+  constructor(private readsevice:WriteserviceService){}
 
-  }
+  
   readblogdata(){
     this.readsevice.getpublishpostdata().subscribe(
       (data:WriteModel[])=>{
@@ -26,6 +28,18 @@ export class ReadComponent implements OnInit{
           
       }
     )
+  }
+
+  getid(item:WriteModel)
+  {
+    console.log(item.id);
+    console.log(item.title);
+
+    
+  }
+  deletepost(post:WriteModel)
+  {
+    this.readsevice.deletepostbyid(post.id)
   }
   
 

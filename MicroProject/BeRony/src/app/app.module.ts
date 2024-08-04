@@ -14,13 +14,17 @@ import { HomeComponent } from './home/home.component';
 import { WriteserviceService } from './writeservice.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ReadingComponent } from './reading/reading.component';
+import { WrongpageComponent } from './wrongpage/wrongpage.component';
 
 const routes  = [
   {path: '', component: HomeComponent},
   {path: 'read', component: ReadComponent},
   {path: 'write', component: WriteComponent},
   {path: 'whosrony', component: WhosronyComponent},
-  {path: 'reading', component: ReadingComponent}
+  // {path: 'reading', component: ReadingComponent},
+  { path: 'reading/:postid', component: ReadingComponent },
+  {path: '**', component: WrongpageComponent}
+
 
 ];
 ``
@@ -35,6 +39,7 @@ const routes  = [
     ReadComponent,
     HomeComponent,
     ReadingComponent,
+    WrongpageComponent,
   ],
   imports: [
     BrowserModule,

@@ -15,5 +15,6 @@ export class WriteComponent {
     this.writeservice.publishblog(publishdata);
     console.log(publishdata.bodyofcontent);
     
+    
   }
 }

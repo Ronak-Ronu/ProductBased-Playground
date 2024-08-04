@@ -43,8 +43,7 @@
         </div>
 
         <div class="footerbuttons">
-            <a routerLink="/reading" >
-
+            <a [routerLink]="'/reading/' + 10" >
                 <button class="footerbuttoncls" style="cursor: pointer;">READ</button>
             </a>
             <div class="invisiblediv"></div>
@@ -56,25 +55,24 @@
 
 
 
-
-
-    <div *ngFor="let item of blogs">
+<div *ngFor="let item of blogs">
         
 <div class="contentdivs">
     <div class="thumbnail">
 
     </div>
     <div class="rightcontentthumbnail">
-
         <div class="thumbnailname">
             <p>{{item.title}}</p>
             <p>{{item.endnotecontent}}</p>
         </div>
 
         <div class="footerbuttons">
-            <button class="footerbuttoncls">READ</button>
+            <button style="cursor: pointer;" class="footerbuttoncls" [routerLink]="'/reading/' + item.id" (click)="getid(item)">READ</button>
             <div class="invisiblediv"></div>
             <button class="footerbuttoncls">SAVE</button>
+            <button class="footerbuttoncls" style="cursor: pointer;" (click)="deletepost(item)">DEL</button>
+
         </div>
 
     </div>
