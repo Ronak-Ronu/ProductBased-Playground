@@ -31,6 +31,8 @@ export class WriteserviceService {
       return this.http.get<WriteModel[]>(this.url)
     }
     
+
+    
     getpublishpostdatabyid(id:number):Observable<WriteModel>
     {
       return this.http.get<WriteModel>(this.url+"/"+id)
