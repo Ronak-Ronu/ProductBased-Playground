@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WriteModel } from '../Models/writemodel';
 import { WriteserviceService } from '../writeservice.service';
-import { TitleCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-write',

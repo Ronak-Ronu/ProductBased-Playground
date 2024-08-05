@@ -17,6 +17,12 @@
       "title": "Angular: Reload/Refresh a Component",
       "bodyofcontent": "An Angular tutorial on how to reload/refresh a single component or the entire application and reuse the logic across multiple components.\n\nThere is a lot of difference between reloading a single component and reloading the entire application. We shall see how both can be achieved.\n\nIt's a very simple application. There are 3 components: AppComponent which hosts the TestComponent and the TestComponent hosts the ChildComponent.\n\nWe have just 2 objectives:\n\nAbility to reload the current route, child route, parent route, and entire application.\nUse inheritance to add this functionality inside a single component so that any other component can extend and reuse it.",
       "endnotecontent": "Thank you for being a part"
+    },
+    {
+      "id": "f1c9",
+      "title": " Top 10 features of angular 18",
+      "bodyofcontent": " If you missed the Google I/O Angular session, you missed not only the latest updates on Angular but also the Generative Art Gallery demo which I had so much fun building. The demo has all of my favorite technologies, including AI, Angular and WebXR. It also was a very pleasant developer experience. Let me tell you why!\\n\\n\\nVertex AI’s Imagen API: This API serves as the creative engine, producing five unique images that embody your chosen style and theme.\\n\\nGemini Multimodal API: Ask questions about each artwork, and it responds with detailed explanations tailored to your queries. Even cooler, it can return these descriptions in a JSON format, perfectly suited for integration within your application",
+      "endnotecontent": " happy editing"
     }
   ],
   "drafts": [
@@ -37,12 +43,6 @@
       "title": "qrqwrqwr12312312 3131saedsa",
       "bodyofcontent": "\n  readdraftblog()\n  {\n    this.readsevice.getdraftblog().subscribe(\n      (data:WriteModel[])=>{\n            this.draftblogs=data\n    })\n  }\n",
       "endnotecontent": "afasfdasf a sfda f"
-    },
-    {
-      "id": "69e6",
-      "title": "this.ngOnInit();\n",
-      "bodyofcontent": "this.ngOnInit();\nthis.ngOnInit();\nthis.ngOnInit();\nthis.ngOnInit();\nthis.ngOnInit();\nthis.ngOnInit();\n",
-      "endnotecontent": "qewrty"
     }
   ]
 }

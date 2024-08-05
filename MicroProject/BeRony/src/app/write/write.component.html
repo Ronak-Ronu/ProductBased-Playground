@@ -25,7 +25,7 @@
                  name="title" 
                  #title="ngModel"
                  maxlength="300"
-                 ngModel
+                 [(ngModel)]="edittitle"
                  required
                  ></textarea>
             
@@ -36,7 +36,7 @@
                placeholder="Write whatever you like!"
                name="bodyofcontent" 
                #bodyofcontent="ngModel"
-               ngModel
+               [(ngModel)]="editbodycontent"
                required
                ></textarea>
 
@@ -46,7 +46,8 @@
              placeholder="Share your post script/ending note"
              name="endnotecontent"
              #endnotecontent="ngModel"
-             ngModel
+             [(ngModel)]="editendnotecontent"
+
              ></textarea>
 
         </div>
