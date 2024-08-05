@@ -3,9 +3,8 @@
     <div class="headingwrite">
         <p>WRITE</p>
     </div>
-
+   
     <div class="bodyofwriting">
-        
         
     <div class="container">
 
@@ -16,24 +15,26 @@
             <button class="toolbarbutton">IMPORT</button>
         </div>
         <form #writecontentform="ngForm">
-
+        
         <div class="writecontentarea">
-            <textarea cols="83" 
-            rows="2"
-             placeholder="TITLE GOES HERE"
-             name="title" 
-             #title="ngModel"
-             maxlength="300"
-             ngModel
-             required
-             ></textarea>
-
-            <textarea cols="83"
-             rows="17"
-              maxlength="3000"
+           
+        
+                <textarea cols="83" 
+                  rows="2"
+                 placeholder="TITLE GOES HERE"
+                 name="title" 
+                 #title="ngModel"
+                 maxlength="300"
+                 ngModel
+                 required
+                 ></textarea>
+            
+            
+             <textarea cols="83"
+               rows="17"
+               maxlength="3000"
                placeholder="Write whatever you like!"
-             name="bodyofcontent" 
-
+               name="bodyofcontent" 
                #bodyofcontent="ngModel"
                ngModel
                required
@@ -70,12 +71,13 @@
                     <!-- <p>TITLE OF THE DRAFT</p> -->
                      <p>{{item.title}}</p>
                     <button class="continuewritingbutton" (click)="publishdraft(item)" style="cursor: pointer;">PUBLISH</button>
+                    <button class="continuewritingbutton" (click)="editdraft(item)" style="cursor: pointer;">EDIT</button>
+
                 </div>
                 
             </div>
         </div>
         
-
 
         <div class="draftsbody">
             

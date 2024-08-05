@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WriteModel } from '../Models/writemodel';
 import { WriteserviceService } from '../writeservice.service';
+import { TitleCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-write',
@@ -9,13 +10,18 @@ import { WriteserviceService } from '../writeservice.service';
 })
 export class WriteComponent implements OnInit {
   draftblogs:WriteModel[]=[]
+  edittitle:string=" "
+  editbodycontent:string=" "
+  editendnotecontent:string=" "
+  editclicked:boolean=false
+
 
   constructor(private writeservice:WriteserviceService){  }
+
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
     this.readdraftblog()
-    this.ngOnInit();
   }
   publishblog(publishdata:WriteModel) {
      
@@ -27,8 +33,6 @@ export class WriteComponent implements OnInit {
   {
     this.writeservice.publishblog(draftdata);
     this.writeservice.deletedraft(draftdata.id);
-   
-
   }
 
 
@@ -48,5 +52,13 @@ export class WriteComponent implements OnInit {
 
   }
 
+  editdraft(draftdata:WriteModel)
+  {
+    this.edittitle=draftdata.title
+    this.editbodycontent=draftdata.bodyofcontent
+    this.editendnotecontent=draftdata.endnotecontent
+    this.editclicked=true
+    console.log(this.edittitle);
+  }
 
 }
