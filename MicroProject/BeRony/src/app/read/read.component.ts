@@ -11,7 +11,6 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ReadComponent implements OnInit{
   blogs: WriteModel[] = [];
-
   ngOnInit(): void {
     this.readblogdata()
     
@@ -29,17 +28,21 @@ export class ReadComponent implements OnInit{
       }
     )
   }
+  
+
 
   getid(item:WriteModel)
   {
     console.log(item.id);
     console.log(item.title);
 
-    
   }
+
+
   deletepost(post:WriteModel)
   {
     this.readsevice.deletepostbyid(post.id)
+    this.ngOnInit()
   }
   
 

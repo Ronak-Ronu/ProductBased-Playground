@@ -7,10 +7,42 @@
       "endnotecontent": "Keep coding and stay curious! The world of web development is vast and always evolving"
     },
     {
-      "id": "2",
-      "title": "technologies, which requires dedication and continuous",
+      "id": "1c52",
+      "title": "Count(*) vs Count(1) in SQL.\n",
+      "bodyofcontent": "What They Do:\n\nCOUNT(*): This function simply counts all the rows in a table, no matter what. It doesn’t care about NULL values or anything else. It just wants to know how many rows there are.\n\nCOUNT(1): This function also counts all the rows in a table. The `1` is just a constant and does not refer to any specific column; it’s merely a placeholder. The database engine treats it the same way as `COUNT(*)`.\n\nPerformance Talk:\nWhen it comes to performance, there’s usually not much of a difference between the two. Modern databases are pretty smart and can handle both just fine. Some folks say `COUNT(1)` might be a tad faster in certain older databases because it’s counting a simple constant value, but honestly, the difference is usually so small that it doesn’t matter much.\n\n\n\n",
+      "endnotecontent": "You can read all of my blogs for free at : thebigdataengineer.com"
+    },
+    {
+      "id": "4484",
+      "title": "Angular: Reload/Refresh a Component",
+      "bodyofcontent": "An Angular tutorial on how to reload/refresh a single component or the entire application and reuse the logic across multiple components.\n\nThere is a lot of difference between reloading a single component and reloading the entire application. We shall see how both can be achieved.\n\nIt's a very simple application. There are 3 components: AppComponent which hosts the TestComponent and the TestComponent hosts the ChildComponent.\n\nWe have just 2 objectives:\n\nAbility to reload the current route, child route, parent route, and entire application.\nUse inheritance to add this functionality inside a single component so that any other component can extend and reuse it.",
+      "endnotecontent": "Thank you for being a part"
+    }
+  ],
+  "drafts": [
+    {
+      "id": "1",
+      "title": "The Journey of Becoming a Full Stack Developer",
       "bodyofcontent": "Becoming a full stack developer is a challenging but rewarding journey. It involves mastering both frontend and backend technologies, which requires dedication and continuous learning.\\n1. Start with understanding the basics of HTML, CSS, and JavaScript.\\n2. Move on to learn a backend language like ",
-      "endnotecontent": "learn a backend"
+      "endnotecontent": "Keep coding and stay curious! The world of web development is vast and always evolving"
+    },
+    {
+      "id": "2",
+      "title": "technologies, which requires dedication and continuous ",
+      "bodyofcontent": "Becoming a full stack developer is a challenging but rewarding journey. It involves mastering both frontend and backend technologies, which requires dedication and continuous learning.\\n1. Start with understanding the basics of HTML, CSS, and JavaScript.\\n2. Move on to learn a backend language like ",
+      "endnotecontent": "Keep coding and stay curious! The world of web development is vast and always evolving"
+    },
+    {
+      "id": "f898",
+      "title": "qrqwrqwr12312312 3131saedsa",
+      "bodyofcontent": "\n  readdraftblog()\n  {\n    this.readsevice.getdraftblog().subscribe(\n      (data:WriteModel[])=>{\n            this.draftblogs=data\n    })\n  }\n",
+      "endnotecontent": "afasfdasf a sfda f"
+    },
+    {
+      "id": "69e6",
+      "title": "this.ngOnInit();\n",
+      "bodyofcontent": "this.ngOnInit();\nthis.ngOnInit();\nthis.ngOnInit();\nthis.ngOnInit();\nthis.ngOnInit();\nthis.ngOnInit();\n",
+      "endnotecontent": "qewrty"
     }
   ]
 }

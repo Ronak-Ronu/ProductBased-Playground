@@ -52,7 +52,7 @@
 
         <div class="footerbuttons">
             <button class="footerbutton" (click)="publishblog(writecontentform.value)">PUBLISH</button>
-            <button class="footerbutton">SAVE AS DRAFT</button>
+            <button class="footerbutton" (click)="saveasdraft(writecontentform.value)" >SAVE AS DRAFT</button>
         </div>
 
     </form>
@@ -63,56 +63,31 @@
         <div class="headerofdraft">
             <p>DRAFTS</p>
         </div>
+        <div *ngFor="let item of draftblogs">
+            <div class="draftsbody">
+            
+                <div class="draft1">
+                    <!-- <p>TITLE OF THE DRAFT</p> -->
+                     <p>{{item.title}}</p>
+                    <button class="continuewritingbutton" (click)="publishdraft(item)" style="cursor: pointer;">PUBLISH</button>
+                </div>
+                
+            </div>
+        </div>
+        
+
 
         <div class="draftsbody">
             
             <div class="draft1">
-                <p>TITLE OF THE DRAFT</p>
-                <button class="continuewritingbutton">CONTINUE WRITING</button>
+                <p>TITLE </p>
+                <button class="continuewritingbutton">PUBLISH</button>
             </div>
             
         </div>
-        <div class="draftsbody">
-            
-            <div class="draft1">
-                <p>TITLE OF THE DRAFT</p>
-                <button class="continuewritingbutton">CONTINUE WRITING</button>
-            </div>
-            
-        </div>
-        <div class="draftsbody">
-            
-            <div class="draft1">
-                <p>TITLE OF THE DRAFT</p>
-                <button class="continuewritingbutton">CONTINUE WRITING</button>
-            </div>
-            
-        </div>
-        <div class="draftsbody">
-            
-            <div class="draft1">
-                <p>TITLE OF THE DRAFT</p>
-                <button class="continuewritingbutton">CONTINUE WRITING</button>
-            </div>
-            
-        </div>
-        <div class="draftsbody">
-            
-            <div class="draft1">
-                <p>TITLE OF THE DRAFT</p>
-                <button class="continuewritingbutton">CONTINUE WRITING</button>
-            </div>
-            
-        </div>
-        
-        <div class="draftsbody">
-            
-            <div class="draft1">
-                <p>TITLE OF THE DRAFT</p>
-                <button class="continuewritingbutton">CONTINUE WRITING</button>
-            </div>
-            
-        </div>
+     
+     
+   
 
     </div>
 
