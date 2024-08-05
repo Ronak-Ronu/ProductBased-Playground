@@ -18,4 +18,3 @@ ng serve
 ### EMS-Employee Management System 
 
 Demonstrating the ngForm, ngModel predefined directives
-
