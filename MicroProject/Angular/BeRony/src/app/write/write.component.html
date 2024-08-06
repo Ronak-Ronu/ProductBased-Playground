@@ -62,7 +62,8 @@
     <div class="draftcontainer">
 
         <div class="headerofdraft">
-            <p>DRAFTS</p>
+            <p>DRAFTS </p>
+            <div (click)="refreshcomponent()" class="refreshbtn">⟳</div>
         </div>
         <div *ngFor="let item of draftblogs">
             <div class="draftsbody">

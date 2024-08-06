@@ -35,6 +35,12 @@
       "title": " <i>You can now write html tags in blogs</i>",
       "bodyofcontent": " <h1>\nHello this is h1 tag looks ugly but ignore it for the demonstration.\n</h1>\n<br/>\n<p>did this paragraph tag works with <i>italic</i></p>\n<br/>\n<p>lemme try the inline styling </p>\n\n<p style=\"color:white;\">did the color changed to white</p>",
       "endnotecontent": " <b>HOPE THIS WORKS...</b><br/> HAPPY LEARNING"
+    },
+    {
+      "id": "b485",
+      "title": " new blog",
+      "bodyofcontent": "  new blog new blog",
+      "endnotecontent": "  new blog"
     }
   ],
   "drafts": [

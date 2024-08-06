@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,ChangeDetectorRef} from '@angular/core';
 import { WriteModel } from '../Models/writemodel';
 import { WriteserviceService } from '../writeservice.service';
 
@@ -15,7 +15,7 @@ export class WriteComponent implements OnInit {
   editclicked:boolean=false
 
 
-  constructor(private writeservice:WriteserviceService){  }
+  constructor(private writeservice:WriteserviceService,private cdr: ChangeDetectorRef){  }
 
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
@@ -60,4 +60,8 @@ export class WriteComponent implements OnInit {
     console.log(this.edittitle);
   }
 
+  refreshcomponent(){
+      this.readdraftblog()
+      this.cdr.detectChanges();
+  }
 }
