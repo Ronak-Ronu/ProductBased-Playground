@@ -53,6 +53,10 @@ JOIN SALE_ORDER on CLIENT_MASTER.Client_No=SALE_ORDER.Client_No
 where Order_status="In process";
 
 
+select * from CLIENT_MASTER;
+
+select Name || ' live in the city of ' || City AS Address from CLIENT_MASTER;
+
 
 
 
