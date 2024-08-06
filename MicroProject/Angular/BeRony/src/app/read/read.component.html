@@ -43,8 +43,12 @@
     <div class="rightcontentthumbnail">
       
         <div class="thumbnailname">
-            <p>{{item.title}}</p>
-            <p>{{item.endnotecontent}}</p>
+            <p [innerHTML]="item.title">
+                <!-- {{item.title}} -->
+            </p>
+            <p [innerHTML]="item.endnotecontent">
+                <!-- {{item.endnotecontent}} -->
+            </p>
         </div>
 
         <div class="footerbuttons">

@@ -1,6 +1,6 @@
 
-<div class="headingwrite">
-    <p>{{post.title}}</p>
+<div class="headingwrite" [innerHTML]="post.title">
+    <!-- <p>{{}}</p> -->
 </div>
 <div class="containerforeading">
 
@@ -16,8 +16,8 @@
         </div>
 
 
-        <div class="bodycontentsection">
-            <p>{{post.bodyofcontent}}</p>
+        <div class="bodycontentsection" [innerHTML]="post.bodyofcontent">
+            <!-- <p>{{post.bodyofcontent}}</p> -->
             <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque labore ea doloribus, perferendis, quae corrupti corporis cumque quod iure optio dolores a possimus incidunt natus molestias nulla quibusdam ex amet.
             Ab minus placeat modi provident eum error voluptatibus vero praesentium numquam magni <br><br> ipsa nulla quis voluptas maxime, distinctio dolor alias qui maiores pariatur et tempora. Earum iusto quidem tempore quam.
             Unde natus quibusdam aut! Quod distinctio totam iure sed eligendi iste. Eaque explicabo quibusdam veniam, sint quae doloribus id sequi qui natus quis, consectetur ad facilis. Illum consequatur maiores inventore?
@@ -25,8 +25,8 @@
             Hic inventore magni deleniti non illo <br><br> reprehenderit tempore natus minus temporibus quis, ipsum soluta officiis odio enim, aspernatur necessitatibus, perferendis harum error similique amet nulla ratione delectus. Aliquam, sed numquam?</p> -->
         </div>
 
-        <div class="endofnotesection">
-            <p>{{post.endnotecontent}}</p>
+        <div class="endofnotesection" [innerHTML]="post.endnotecontent">
+            <!-- <p>{{post.endnotecontent}}</p> -->
             <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quasi aliquam aliquid voluptatum, possimus aspernatur facilis omnis eum dolorum alias, totam unde adipisci repudiandae rerum</p> -->
         </div>
 

@@ -47,7 +47,6 @@
              name="endnotecontent"
              #endnotecontent="ngModel"
              [(ngModel)]="editendnotecontent"
-
              ></textarea>
 
         </div>
@@ -70,7 +69,9 @@
             
                 <div class="draft1">
                     <!-- <p>TITLE OF THE DRAFT</p> -->
-                     <p>{{item.title}}</p>
+                     <p [innerHTML]="item.title">
+                        <!-- {{item.title}} -->
+                    </p>
                     <button class="continuewritingbutton" (click)="publishdraft(item)" style="cursor: pointer;">PUBLISH</button>
                     <button class="continuewritingbutton" (click)="editdraft(item)" style="cursor: pointer;">EDIT</button>
 
