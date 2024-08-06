@@ -46,6 +46,13 @@ update CLIENT_MASTER set City="jaipur" where Client_No="C00004";
 
 select * from CLIENT_MASTER where City="Mumbai";
 
-SELECT  distinct Name,City from CLIENT_MASTER  join SALE_ORDER where Order_No in ("O19003","O19002");
+SELECT  distinct Name,City from CLIENT_MASTER join SALE_ORDER where Order_No in ("O19003","O19002");
 
-select distinct Name,City,Pincode from CLIENT_MASTER JOIN SALE_ORDER where Order_status="In process";
+select  distinct Name,City,Pincode from CLIENT_MASTER
+JOIN SALE_ORDER on CLIENT_MASTER.Client_No=SALE_ORDER.Client_No 
+where Order_status="In process";
+
+
+
+
+
