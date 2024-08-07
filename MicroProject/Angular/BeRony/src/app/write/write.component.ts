@@ -2,6 +2,7 @@ import { Component, OnInit ,ChangeDetectorRef} from '@angular/core';
 import { WriteModel } from '../Models/writemodel';
 import { WriteserviceService } from '../writeservice.service';
 
+
 @Component({
   selector: 'app-write',
   templateUrl: './write.component.html',
@@ -64,4 +65,6 @@ export class WriteComponent implements OnInit {
       this.readdraftblog()
       this.cdr.detectChanges();
   }
+
+
 }

@@ -16,7 +16,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReadingComponent } from './reading/reading.component';
 import { WrongpageComponent } from './wrongpage/wrongpage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 const routes  = [
   {path: '', component: HomeComponent},
   {path: 'read', component: ReadComponent},

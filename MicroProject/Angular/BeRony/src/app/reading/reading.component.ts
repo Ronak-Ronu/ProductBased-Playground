@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { WriteModel } from '../Models/writemodel';
 import { WriteserviceService } from '../writeservice.service';
 // import { WriteserviceService } from '../writeservice.service';
+import {NgNavigatorShareService} from 'ng-navigator-share'
 
 @Component({
   selector: 'app-reading',
@@ -13,7 +14,7 @@ export class ReadingComponent implements OnInit {
   post!:WriteModel
 
   id:any;
-  constructor(private service:WriteserviceService,private router:ActivatedRoute) {}
+  constructor(private service:WriteserviceService,private router:ActivatedRoute,private ngnavigateservice:NgNavigatorShareService) {}
 
 
   ngOnInit(): void {
@@ -26,10 +27,16 @@ export class ReadingComponent implements OnInit {
     
 
   })
-
-
-
-    
   }
+  share(){
+    this.ngnavigateservice.share({
+      title:this.post.title,
+      text:this.post.endnotecontent,
+      url:'https://github.com/Ronak-Ronu'
+    }).then((res)=>{
+      console.log(res);
+    })
+  }
+  
   
 }
