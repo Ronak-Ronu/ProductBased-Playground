@@ -41,6 +41,12 @@
       "title": " new blog",
       "bodyofcontent": "  new blog new blog",
       "endnotecontent": "  new blog"
+    },
+    {
+      "id": "4f1e",
+      "title": " <i>can i can add images</i>",
+      "bodyofcontent": " <b>image tag in html is as folows</b>\n\n<img src=\"https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp\" style=\"height:100px;width:100px;\" />",
+      "endnotecontent": " HAPPY LEARNING"
     }
   ],
   "drafts": [
