@@ -56,7 +56,3 @@ where Order_status="In process";
 select * from CLIENT_MASTER;
 
 select concat(Name ,' live in the city of ',City)   AS Address from CLIENT_MASTER;
-
-
-
-
