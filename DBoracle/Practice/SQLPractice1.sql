@@ -39,14 +39,13 @@ insert into SALE_ORDER values (
 select * from SALE_ORDER;
 
 select * from CLIENT_MASTER where Bal_due=0;
-     select * from CLIENT_MASTER;
-     
-     SET SQL_SAFE_UPDATES = 0;
+select * from CLIENT_MASTER;   
+SET SQL_SAFE_UPDATES = 0;
 update CLIENT_MASTER set City="jaipur" where Client_No="C00004";
 
 select * from CLIENT_MASTER where City="Mumbai";
 
-SELECT  distinct Name,City from CLIENT_MASTER join SALE_ORDER where Order_No in ("O19003","O19002");
+SELECT  distinct o.Name,o.City from SALE_ORDER s join CLIENT_MASTER o on s.Client_No=o.Client_No where Order_No in ("O19003","O19002");
 
 select  distinct Name,City,Pincode from CLIENT_MASTER
 JOIN SALE_ORDER on CLIENT_MASTER.Client_No=SALE_ORDER.Client_No 
