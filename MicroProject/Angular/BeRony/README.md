@@ -1,4 +1,5 @@
 # BeRony
+![alt text](src/assets/img/logo.png)
 
 ### Documentation
 
